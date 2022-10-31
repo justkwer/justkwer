@@ -8,8 +8,10 @@ export const theme = {
     blue1: '#194060',
     blue2: '#607D94',
     blue3: '#C9DCEC',
+    blue4: '#467DFF',
+    blue5: '#F1F6FA',
     red: '#C14040',
-    background: '#F1F6FA',
+    white: '#FFFFFF',
   },
   sizes: {
     main: '1280px',
@@ -37,7 +39,6 @@ export const theme = {
     border: 'none',
     outline: 'none',
     cursorD: 'default',
-    filter: 'drop-shadow(30 0 12px rgba(24, 92, 255, 0.18))',
   },
   flex: {
     row: 'display: flex; justify-content: space-between;',
@@ -48,8 +49,8 @@ export const theme = {
     secondary: 'drop-shadow(6 0 2px rgba(0, 43, 78, 0.15))',
   },
   border: {
-    primary: '6px',
-    secondary: '14px',
+    primary: '14px',
+    secondary: '20px',
   },
   padding: {
     primary: '20px 40px',

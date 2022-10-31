@@ -11,6 +11,8 @@ export default createGlobalStyle`
     font-weight: ${theme.fonts.weight};
     font-size: ${theme.fonts.size};
     color: ${theme.colors.black};
+    letter-spacing: ${theme.fonts.spacing.primary};
+    line-height: ${theme.fonts.height.primary};
   }
 
   button {
