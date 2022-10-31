@@ -1,3 +1,5 @@
+import { DefaultTheme } from 'styled-components';
+
 export const theme = {
   colors: {
     primary: '#185CFF',
@@ -14,7 +16,17 @@ export const theme = {
     white: '#FFFFFF',
   },
   sizes: {
-    main: '1280px',
+    container: {
+      width: [1200, 960, 720, 540, 320],
+      padding: ['20px 40px', '0', '0', '0'],
+    },
+  },
+  media: {
+    extraLarge: '(max-width: 1110px)',
+    large: '(max-width: 960px)',
+    medium: '(max-width: 720px)',
+    small: '(max-width: 540px)',
+    mobile: '(max-width: 360px)',
   },
   fonts: {
     familyP: 'Manrope, sans-serif',
@@ -41,8 +53,8 @@ export const theme = {
     cursorD: 'default',
   },
   flex: {
-    row: 'display: flex; justify-content: space-between;',
-    colum: 'display: flex; justify-content: space-between; flex-direction: column;',
+    row: 'display: flex; justify-content: center;  align-items: center;',
+    column: 'display: flex; flex-direction: column; justify-content: center; align-items: center;',
   },
   filter: {
     primary: 'drop-shadow(20 0 2px rgba(24, 92, 255, 0.04))',
@@ -52,7 +64,19 @@ export const theme = {
     primary: '14px',
     secondary: '20px',
   },
-  padding: {
-    primary: '20px 40px',
+};
+
+export const lightTheme: DefaultTheme = {
+  ...theme,
+  type: 'light',
+};
+
+export const darkTheme: DefaultTheme = {
+  ...theme,
+  type: 'dark',
+
+  colors: {
+    ...theme.colors,
+    primary: theme.colors.black,
   },
 };

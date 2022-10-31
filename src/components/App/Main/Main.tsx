@@ -1,10 +1,11 @@
 import React from 'react';
 import { MainStyled } from './styled';
+import { Section } from '../../../styled/globalStyles';
 
 const Main = () => {
   return (
     <MainStyled>
-      <section></section>
+      <Section></Section>
     </MainStyled>
   );
 };

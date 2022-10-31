@@ -4,11 +4,7 @@ export const FooterStyled = styled.footer`
   background-color: ${({ theme }) => theme.colors.blue5};
 
   section {
-    margin: auto;
-    padding: 20px 40px;
-    ${({ theme }) => theme.flex.colum}
-    align-items: center;
-    justify-content: center;
+    ${({ theme }) => theme.flex.column}
     gap: 10px;
 
     div {

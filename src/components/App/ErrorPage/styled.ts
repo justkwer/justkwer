@@ -6,17 +6,12 @@ export const ErrorPageStyled = styled.main`
   height: 100vh;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${({ theme }) => theme.flex.row};
   background: ${({ theme }) => theme.colors.blue5};
 
   section {
-    padding: 5px 40px;
     ${({ theme }) => theme.flex.row};
-    align-items: center;
-    margin: auto;
-
+    
     figure {
       img {
         max-width: 800px;
