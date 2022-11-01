@@ -1,4 +1,4 @@
-export const NavigationList = [{ href: '/', text: 'Main' }];
+export const NavigationList = [{ href: '/about', text: 'About' }];
 
 export const social = [
   {

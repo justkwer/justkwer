@@ -4,6 +4,7 @@ import Navigation from './Navigation/Navigation';
 import { HeaderStyled } from './styled';
 import { Section } from '../../styled/globalStyles';
 import { useToggleLightMode } from '../Theme/Theme';
+import ChangeMode from './ChangeMode/ChangeMode';
 
 const Header = () => {
   const { isLightMode } = useToggleLightMode();
@@ -11,8 +12,9 @@ const Header = () => {
   return (
     <HeaderStyled>
       <Section>
-        <Logo isOn={isLightMode} />
+        <Logo />
         <Navigation />
+        <ChangeMode isOn={isLightMode} />
       </Section>
     </HeaderStyled>
   );

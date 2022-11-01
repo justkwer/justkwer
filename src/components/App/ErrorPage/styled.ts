@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 export const ErrorPageStyled = styled.main`
-  position: fixed;
+  position: absolute;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
   ${({ theme }) => theme.flex.row};
-  background: ${({ theme }) => theme.colors.blue5};
-
+  
+  
   section {
     ${({ theme }) => theme.flex.row};
-    
+
     figure {
       img {
         max-width: 800px;
@@ -21,7 +21,7 @@ export const ErrorPageStyled = styled.main`
 
     figcaption {
       padding: 20px 60px;
-      ${({ theme }) => theme.flex.colum}
+      ${({ theme }) => theme.flex.column}
       gap: 40px;
       align-items: center;
       text-align: center;
@@ -37,7 +37,7 @@ export const ErrorPageStyled = styled.main`
         letter-spacing: ${({ theme }) => theme.fonts.spacing.primary};
         color: ${({ theme }) => theme.colors.grey};
       }
-      }
     }
   }
+}
 `;

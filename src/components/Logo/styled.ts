@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const LogoStyled = styled.div`
+export const LogoStyled = styled(Link)`
   ${({ theme }) => theme.flex.row};
   align-items: center;
   gap: 5px;
@@ -15,8 +16,7 @@ export const LogoStyled = styled.div`
   figcaption {
     h2 {
       text-align: center;
-      cursor: default;
-      color: ${({ theme }) => theme.colors.primary};
+      color: ${({ theme }) => theme.colors.white};
     }
   }
 `;

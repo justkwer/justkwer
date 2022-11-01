@@ -1,14 +1,12 @@
 import React from 'react';
 import { LogoStyled } from './styled';
-import { useToggleLightMode } from '../Theme/Theme';
+import ease from '../../assets/img/ease.webp';
 
-export const Logo = ({ isOn }: { isOn: boolean }) => {
-  const { toggleLightMode } = useToggleLightMode();
-
+export const Logo = () => {
   return (
-    <LogoStyled onClick={toggleLightMode}>
+    <LogoStyled to="/">
       <figure>
-        <img src={require('../../assets/img/ease.webp')} alt={'Error'} />
+        <img src={ease} alt="ease" />
       </figure>
       <figcaption>
         <h2>ease</h2>

@@ -3,15 +3,21 @@ import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-d
 import Layout from '../Layout/Layout';
 import ErrorPage from './ErrorPage/ErrorPage';
 import Main from './Main/Main';
+import Background from '../Background/Background';
+import { useToggleLightMode } from '../Theme/Theme';
+import About from './About/About';
 
 function App() {
+  const { isLightMode } = useToggleLightMode();
   return (
     <Router>
+      {isLightMode && <Background />}
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Main />} />
-            <Route path="404" element={<ErrorPage isError={false} />} />
+            <Route path="/about" element={<About />} />
+            <Route path="404" element={<ErrorPage />} />
             <Route path="*" element={<Navigate to="404" replace />} />
           </Route>
         </Routes>

@@ -1,5 +1,5 @@
 export interface ErrorPageModal {
-  isError: boolean;
+  isError?: boolean;
   title?: string;
   subtitle?: string;
 }

@@ -5,25 +5,27 @@ import { Link } from 'react-router-dom';
 import NotFound from './NotFound/NotFound';
 import Error from './Error/Error';
 import { ErrorPageModal } from './ErrorPage.modal';
+import { Section } from '../../../styled/globalStyles';
+import error from '../../../assets/img/404.webp';
 
-const ErrorPage = ({ isError, title, subtitle }: ErrorPageModal) => {
+const ErrorPage = ({ isError = false, title, subtitle }: ErrorPageModal) => {
+  const renderErrorComponent = () =>
+    title && subtitle && <Error title={title} subtitle={subtitle} />;
+
   return (
     <ErrorPageStyled>
-      <section>
+      <Section>
         <figure>
-          <img src={require('../../../assets/img/404.webp')} alt={'Error'} />
+          <img src={error} alt="Error" />
         </figure>
         <figcaption>
-          {isError ? <Error title={title as string} subtitle={subtitle as string} /> : <NotFound />}
+          {isError ? renderErrorComponent() : <NotFound />}
           <Button>
-            <Link to="/" style={{ color: '#FFFFFF' }}>
-              Back home
-            </Link>
+            <Link to="/">Back home</Link>
           </Button>
         </figcaption>
-      </section>
+      </Section>
     </ErrorPageStyled>
   );
 };
-
 export default ErrorPage;

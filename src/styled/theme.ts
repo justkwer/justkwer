@@ -2,18 +2,18 @@ import { DefaultTheme } from 'styled-components';
 
 export const theme = {
   colors: {
-    primary: '#185CFF',
-    secondary: '#002B4E',
-    tertiary: '#F0F9FF',
+    primary: '#5836AC',
+    secondary: '#8729b9',
+    magenta: '#B21CC4',
     black: '#292D33',
-    grey: '#9497A1',
-    blue1: '#194060',
-    blue2: '#607D94',
-    blue3: '#C9DCEC',
-    blue4: '#467DFF',
-    blue5: '#F1F6FA',
+    grey: '#CBCBCB',
+    dark: '#1A1A1A',
+    indigo: '#6610f2',
+    blue: '#0d6efd',
+    pink: '#d63384',
     red: '#C14040',
     white: '#FFFFFF',
+    background: 'linear-gradient(135deg, #B21CC4 0%, #5836AC 100%)',
   },
   sizes: {
     container: {
@@ -29,8 +29,8 @@ export const theme = {
     mobile: '(max-width: 360px)',
   },
   fonts: {
-    familyP: 'Manrope, sans-serif',
-    familyS: 'Open Sans, sans-serif',
+    familyP: 'Equinox Bold, sans-serif',
+    familyS: 'Nunito Sans, sans-serif',
     style: 'Bold',
     weight: '400',
     size: '22px',
@@ -41,8 +41,8 @@ export const theme = {
       secondary: '160%',
     },
     spacing: {
-      primary: '-1.5%',
-      secondary: '-1%',
+      primary: '0.06em',
+      secondary: '7em',
     },
   },
   buttons: {
@@ -77,6 +77,9 @@ export const darkTheme: DefaultTheme = {
 
   colors: {
     ...theme.colors,
-    primary: theme.colors.black,
+    primary: theme.colors.magenta,
+    white: theme.colors.dark,
+    gray: theme.colors.black,
+    magenta: theme.colors.blue,
   },
 };

@@ -9,17 +9,20 @@ export const NavigationStyled = styled.nav`
       list-style-type: none;
 
       a {
-        color: ${({ theme }) => theme.colors.black};
+        color: ${({ theme }) => theme.colors.white};
+        opacity: 0.8;
 
         &:hover {
-          color: ${({ theme }) => theme.colors.black};
+          color: ${({ theme }) => theme.colors.white};
+          opacity: 1;
         }
-      }
 
-      .active {
-        color: ${({ theme }) => theme.colors.black};
-        border-bottom: 2px solid ${({ theme }) => theme.colors.primary};
-        cursor: ${({ theme }) => theme.buttons.cursorD};
+        &.active {
+          color: ${({ theme }) => theme.colors.white};
+          border-bottom: 2px solid ${({ theme }) => theme.colors.white};
+          cursor: ${({ theme }) => theme.buttons.cursorD};
+          opacity: 1;
+        }
       }
     }
   }

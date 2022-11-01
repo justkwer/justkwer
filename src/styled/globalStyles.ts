@@ -31,6 +31,10 @@ export default createGlobalStyle`
   img, svg {
     display: block;
   }
+  
+  svg, button {
+    transition: .3s;
+  }
 `;
 
 export const Section = styled.section`
@@ -42,7 +46,7 @@ export const Section = styled.section`
     font-style: ${({ theme }) => theme.fonts.style};
     font-weight: ${({ theme }) => theme.fonts.weight};
     font-size: ${({ theme }) => theme.fonts.size};
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.white};
     letter-spacing: ${({ theme }) => theme.fonts.spacing.primary};
     line-height: ${({ theme }) => theme.fonts.height.primary};
   }
