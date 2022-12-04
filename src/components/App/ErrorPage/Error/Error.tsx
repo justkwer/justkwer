@@ -1,9 +1,10 @@
 import React from 'react';
+import { H1 } from '../../../../styled/tags';
 
 const Error = ({ title, subtitle }: { title: string; subtitle: string }) => {
   return (
     <>
-      <h1>{title}</h1>
+      <H1>{title}</H1>
       <p>{subtitle}</p>
     </>
   );

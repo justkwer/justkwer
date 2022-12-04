@@ -1,11 +1,12 @@
 import { DefaultTheme } from 'styled-components';
+import { ThemeEnum } from '../interfaces/styled.model';
 
 export const theme = {
   colors: {
     primary: '#5836AC',
     secondary: '#8729b9',
     magenta: '#B21CC4',
-    black: '#292D33',
+    black: '#000000',
     grey: '#CBCBCB',
     dark: '#1A1A1A',
     indigo: '#6610f2',
@@ -13,7 +14,6 @@ export const theme = {
     pink: '#d63384',
     red: '#C14040',
     white: '#FFFFFF',
-    background: 'linear-gradient(135deg, #B21CC4 0%, #5836AC 100%)',
   },
   sizes: {
     container: {
@@ -38,11 +38,11 @@ export const theme = {
     line: '33px',
     height: {
       primary: '110%',
-      secondary: '160%',
+      secondary: '130%',
     },
     spacing: {
       primary: '0.06em',
-      secondary: '7em',
+      secondary: '0.1em',
     },
   },
   buttons: {
@@ -68,18 +68,18 @@ export const theme = {
 
 export const lightTheme: DefaultTheme = {
   ...theme,
-  type: 'light',
+  type: ThemeEnum.light,
 };
 
 export const darkTheme: DefaultTheme = {
   ...theme,
-  type: 'dark',
+  type: ThemeEnum.dark,
 
   colors: {
     ...theme.colors,
     primary: theme.colors.magenta,
     white: theme.colors.dark,
-    gray: theme.colors.black,
+    grey: theme.colors.black,
     magenta: theme.colors.blue,
   },
 };

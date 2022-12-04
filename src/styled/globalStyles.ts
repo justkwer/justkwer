@@ -1,10 +1,17 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: ${({ theme }) => theme.fonts.familyP};
+    font-style: ${({ theme }) => theme.fonts.style};
+    font-weight: ${({ theme }) => theme.fonts.weight};
+    color: ${({ theme }) => theme.colors.white};
+    letter-spacing: ${({ theme }) => theme.fonts.spacing.primary};
+    line-height: ${({ theme }) => theme.fonts.height.primary};
+    font-size: ${({ theme }) => theme.fonts.size};
   }
 
   html, body {
@@ -22,6 +29,7 @@ export default createGlobalStyle`
   #root {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 
   section {
@@ -31,55 +39,16 @@ export default createGlobalStyle`
   img, svg {
     display: block;
   }
-  
+
   svg, button {
     transition: .3s;
-  }
-`;
-
-export const Section = styled.section`
-  max-width: ${({ theme }) => theme.sizes.container.width[0]}px;
-  padding: ${({ theme }) => theme.sizes.container.padding[0]};
-
-  * {
-    font-family: ${({ theme }) => theme.fonts.familyP};
-    font-style: ${({ theme }) => theme.fonts.style};
-    font-weight: ${({ theme }) => theme.fonts.weight};
-    font-size: ${({ theme }) => theme.fonts.size};
-    color: ${({ theme }) => theme.colors.white};
-    letter-spacing: ${({ theme }) => theme.fonts.spacing.primary};
-    line-height: ${({ theme }) => theme.fonts.height.primary};
-  }
-
-  button {
-    text-decoration: ${({ theme }) => theme.buttons.decoration};
-    cursor: ${({ theme }) => theme.buttons.cursor};
-    border: ${({ theme }) => theme.buttons.border};
-    outline: ${({ theme }) => theme.buttons.outline};
-
-    &:disabled {
-      cursor: ${({ theme }) => theme.buttons.cursorD};
-    }
   }
 
   a {
     text-decoration: ${({ theme }) => theme.buttons.decoration};
   }
-
-  @media ${({ theme }) => theme.media.large} {
-    max-width: ${({ theme }) => theme.sizes.container.width[1]}px;
-    padding: ${({ theme }) => theme.sizes.container.padding[1]};
-  }
-  @media ${({ theme }) => theme.media.medium} {
-    max-width: ${({ theme }) => theme.sizes.container.width[2]}px;
-    padding: ${({ theme }) => theme.sizes.container.padding[2]};
-  }
-  @media ${({ theme }) => theme.media.small} {
-    max-width: ${({ theme }) => theme.sizes.container.width[3]}px;
-    padding: ${({ theme }) => theme.sizes.container.padding[3]};
-  }
-  @media ${({ theme }) => theme.media.mobile} {
-    max-width: ${({ theme }) => theme.sizes.container.width[4]}px;
-    padding: ${({ theme }) => theme.sizes.container.padding[4]};
+  
+  ::-webkit-scrollbar {
+    width: 0;
   }
 `;

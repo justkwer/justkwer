@@ -9,7 +9,7 @@ export const Logo = () => {
         <img src={ease} alt="ease" />
       </figure>
       <figcaption>
-        <h2>ease</h2>
+        <span>ease</span>
       </figcaption>
     </LogoStyled>
   );

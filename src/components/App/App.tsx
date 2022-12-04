@@ -6,6 +6,7 @@ import Main from './Main/Main';
 import Background from '../Background/Background';
 import { useToggleLightMode } from '../Theme/Theme';
 import About from './About/About';
+import Games from './Games/Games';
 
 function App() {
   const { isLightMode } = useToggleLightMode();
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Main />} />
             <Route path="/about" element={<About />} />
+            <Route path="/games" element={<Games />} />
             <Route path="404" element={<ErrorPage />} />
             <Route path="*" element={<Navigate to="404" replace />} />
           </Route>

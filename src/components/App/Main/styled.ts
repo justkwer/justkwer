@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
 export const MainStyled = styled.main`
-  background-color: ${({ theme }) => theme.colors.blue5};
+  section {
+    ${({ theme }) => theme.flex.row};
+    gap: 100px;
+  }
 `;

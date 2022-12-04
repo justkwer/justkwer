@@ -1,8 +1,8 @@
 import React from 'react';
 import Logo from '../Logo/Logo';
 import Navigation from './Navigation/Navigation';
-import { HeaderStyled } from './styled';
-import { Section } from '../../styled/globalStyles';
+import { HeaderStyled, NavStyled } from './styled';
+import { Section } from '../../styled/tags';
 import { useToggleLightMode } from '../Theme/Theme';
 import ChangeMode from './ChangeMode/ChangeMode';
 
@@ -13,8 +13,10 @@ const Header = () => {
     <HeaderStyled>
       <Section>
         <Logo />
-        <Navigation />
-        <ChangeMode isOn={isLightMode} />
+        <NavStyled>
+          <Navigation />
+          <ChangeMode isOn={isLightMode} />
+        </NavStyled>
       </Section>
     </HeaderStyled>
   );

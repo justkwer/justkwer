@@ -8,14 +8,15 @@ export const LogoStyled = styled(Link)`
 
   figure {
     img {
-      max-width: 40px;
-      max-height: 40px;
+      max-width: 50px;
+      max-height: 50px;
     }
   }
 
   figcaption {
-    h2 {
+    span {
       text-align: center;
+      font-size: 1.6em;
       color: ${({ theme }) => theme.colors.white};
     }
   }

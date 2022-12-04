@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import NotFound from './NotFound/NotFound';
 import Error from './Error/Error';
 import { ErrorPageModal } from './ErrorPage.modal';
-import { Section } from '../../../styled/globalStyles';
+import { Section } from '../../../styled/tags';
 import error from '../../../assets/img/404.webp';
 
 const ErrorPage = ({ isError = false, title, subtitle }: ErrorPageModal) => {
@@ -20,9 +20,9 @@ const ErrorPage = ({ isError = false, title, subtitle }: ErrorPageModal) => {
         </figure>
         <figcaption>
           {isError ? renderErrorComponent() : <NotFound />}
-          <Button>
-            <Link to="/">Back home</Link>
-          </Button>
+          <Link to="/">
+            <Button>Back home</Button>
+          </Link>
         </figcaption>
       </Section>
     </ErrorPageStyled>

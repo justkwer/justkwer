@@ -9,17 +9,31 @@ export const NavigationStyled = styled.nav`
       list-style-type: none;
 
       a {
-        color: ${({ theme }) => theme.colors.white};
-        opacity: 0.8;
+        opacity: 0.7;
+        font-size: 1.2em;
+        position: relative;
 
-        &:hover {
-          color: ${({ theme }) => theme.colors.white};
+        &:hover,
+        &:hover::after {
+          width: 100%;
           opacity: 1;
         }
 
+        &::after {
+          position: absolute;
+          background: none repeat scroll 0 0 transparent;
+          bottom: -3px;
+          left: 0;
+          content: '';
+          display: block;
+          height: 3px;
+          background: ${({ theme }) => theme.colors.white};
+          transition: width 0.3s ease-out;
+          width: 0;
+        }
+
         &.active {
-          color: ${({ theme }) => theme.colors.white};
-          border-bottom: 2px solid ${({ theme }) => theme.colors.white};
+          border-bottom: 3px solid ${({ theme }) => theme.colors.white};
           cursor: ${({ theme }) => theme.buttons.cursorD};
           opacity: 1;
         }

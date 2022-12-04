@@ -6,7 +6,7 @@ export const BackgroundStyled = styled.div`
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -5;
 
   img {
     width: 100%;

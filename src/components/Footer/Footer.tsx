@@ -1,8 +1,8 @@
 import React from 'react';
 import { FooterStyled } from './styled';
-import { SvgGenerator } from '../SvgGenerator/SvgGenerator';
 import { social } from '../../constants/constants';
-import { Section } from '../../styled/globalStyles';
+import { Section } from '../../styled/tags';
+import { SvgGenerator } from '../SvgGenerator/SvgGenerator';
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
       <Section>
         <div>
           {social.map(({ name, link }) => (
-            <a href={link} target="_blank" key={name}>
+            <a href={link} key={name} target="_blank" rel="noopener noreferrer">
               <SvgGenerator id={name} />
             </a>
           ))}
