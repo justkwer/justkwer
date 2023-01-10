@@ -47,7 +47,7 @@ export default createGlobalStyle`
   a {
     text-decoration: ${({ theme }) => theme.buttons.decoration};
   }
-  
+
   ::-webkit-scrollbar {
     width: 0;
   }

@@ -1,7 +1,9 @@
-export const NavigationList = [
+export const navigationList = [
   { href: '/about', text: 'About' },
   { href: '/games', text: 'Games' },
 ];
+
+export const navigationAbout = ['/', '/education', '/what-i-want', '/watch', '/contact'];
 
 export const social = [
   {
@@ -26,7 +28,7 @@ export const social = [
   },
 ];
 
-export const WhatIWantToDo = [
+export const whatIWantToDo = [
   {
     title: 'Web Development',
     subtitle:
@@ -50,4 +52,9 @@ export const WhatIWantToDo = [
 export const mapProps: { coords: [number, number]; zoom: number } = {
   coords: [53.934155, 30.245244],
   zoom: 10,
+};
+
+export const loadingError = {
+  title: 'Loading...',
+  subtitle: 'Check your network connection...',
 };

@@ -1,5 +1,12 @@
 import { DefaultTheme } from 'styled-components';
 import { ThemeEnum } from '../interfaces/styled.model';
+import {
+  opacityKeyframes,
+  pictureKeyframes,
+  shineKeyframes,
+  subtitleKeyframes,
+  titleKeyframes,
+} from './keyframes';
 
 export const theme = {
   colors: {
@@ -63,6 +70,17 @@ export const theme = {
   border: {
     primary: '14px',
     secondary: '20px',
+  },
+  keyframes: {
+    delay: ['0.5s', '0.75s', '1s'],
+    duration: ['0.5s'],
+    animation: {
+      title: titleKeyframes,
+      subtitle: subtitleKeyframes,
+      shine: shineKeyframes,
+      opacity: opacityKeyframes,
+      picture: pictureKeyframes,
+    },
   },
 };
 

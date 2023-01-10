@@ -1,3 +1,5 @@
+import { Keyframes } from 'styled-components';
+
 export enum ThemeEnum {
   light = 'light',
   dark = 'dark',
@@ -65,5 +67,16 @@ export interface InterfaceTheme {
   border: {
     primary: string;
     secondary: string;
+  };
+  keyframes: {
+    delay: string[];
+    duration: string[];
+    animation: {
+      title: Keyframes;
+      subtitle: Keyframes;
+      shine: Keyframes;
+      opacity: Keyframes;
+      picture: Keyframes;
+    };
   };
 }

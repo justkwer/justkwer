@@ -7,7 +7,7 @@ export const H1 = styled.h1`
   line-height: ${({ theme }) => theme.fonts.height.secondary};
 `;
 
-export const H2 = styled.h1`
+export const H2 = styled.h2`
   font-weight: 700;
   font-size: 3em;
   letter-spacing: ${({ theme }) => theme.fonts.spacing.secondary};
@@ -56,8 +56,12 @@ export const BorderDown = styled(BorderLeft)`
 `;
 
 export const Section = styled.section`
-  min-width: ${({ theme }) => theme.sizes.container.width[0]}px;
   padding: ${({ theme }) => theme.sizes.container.padding[0]};
+
+  @media (${({ theme }) => theme.media.extraLarge}) {
+    max-width: ${({ theme }) => theme.sizes.container.width[0]}px;
+    padding: ${({ theme }) => theme.sizes.container.padding[0]};
+  }
 
   @media (${({ theme }) => theme.media.large}) {
     max-width: ${({ theme }) => theme.sizes.container.width[1]}px;

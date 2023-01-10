@@ -1,11 +1,11 @@
 import React from 'react';
 import { MainPictureStyled } from './styled';
-import { SvgGenerator } from '../../../SvgGenerator/SvgGenerator';
+import main from '../../../../assets/svg/main.svg';
 
 const MainPicture = () => {
   return (
     <MainPictureStyled>
-      <SvgGenerator id="main" />
+      <img src={main} alt="hidden power" />
     </MainPictureStyled>
   );
 };

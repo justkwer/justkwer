@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 const Signature = () => {
   useEffect(() => {
     return () => {
-      const str = 'Kwer';
+      const str = 'Alex Moore';
       const style = [
         'padding: .1em;',
         'text-shadow: 0 2px #5836AC;',

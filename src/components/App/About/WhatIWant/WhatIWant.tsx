@@ -1,7 +1,7 @@
 import React from 'react';
 import { BorderDown, H2 } from '../../../../styled/tags';
 import { WhatIDoDivStyled, WhatIDoStyled } from './styled';
-import { WhatIWantToDo } from '../../../../constants/constants';
+import { whatIWantToDo } from '../../../../constants/constants';
 import WantGenerator from './WantGenerator/WantGenerator';
 
 const WhatIWant = () => {
@@ -10,7 +10,7 @@ const WhatIWant = () => {
       <H2>What I want to do</H2>
       <BorderDown />
       <WhatIDoDivStyled>
-        {WhatIWantToDo.map(({ title, subtitle, svg }) => (
+        {whatIWantToDo.map(({ title, subtitle, svg }) => (
           <WantGenerator title={title} subtitle={subtitle} svg={svg} key={title} />
         ))}
       </WhatIDoDivStyled>
