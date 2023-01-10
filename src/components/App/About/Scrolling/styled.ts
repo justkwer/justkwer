@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ScrollingStyled = styled.div<{ up: boolean; page: number }>`
+export const ScrollingStyled = styled.div<{ up: boolean }>`
   opacity: 0;
   animation: ${({ theme }) => theme.keyframes.animation.opacity}
     ${({ theme }) => theme.keyframes.duration[0]} forwards;

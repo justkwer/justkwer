@@ -3,6 +3,8 @@ export const navigationList = [
   { href: '/games', text: 'Games' },
 ];
 
+export const notFoundPage = '/404';
+
 export const navigationAbout = ['/', '/education', '/what-i-want', '/watch', '/contact'];
 
 export const social = [

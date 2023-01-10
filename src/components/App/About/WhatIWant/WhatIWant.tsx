@@ -10,8 +10,8 @@ const WhatIWant = () => {
       <H2>What I want to do</H2>
       <BorderDown />
       <WhatIDoDivStyled>
-        {whatIWantToDo.map(({ title, subtitle, svg }) => (
-          <WantGenerator title={title} subtitle={subtitle} svg={svg} key={title} />
+        {whatIWantToDo.map(toDo => (
+          <WantGenerator {...toDo} />
         ))}
       </WhatIDoDivStyled>
     </WhatIDoStyled>

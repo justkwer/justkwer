@@ -1,21 +1,21 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { navigationList } from '../../../constants/constants';
-import { NavigationStyled } from './styled';
+import { NavigationLi, NavigationUl } from './styled';
 
 const Navigation = () => {
   return (
-    <NavigationStyled>
-      <ul>
-        {navigationList.map(({ href, text }, index) => (
-          <li key={index}>
+    <nav>
+      <NavigationUl>
+        {navigationList.map(({ href, text }) => (
+          <NavigationLi key={text}>
             <NavLink end to={href}>
               {text}
             </NavLink>
-          </li>
+          </NavigationLi>
         ))}
-      </ul>
-    </NavigationStyled>
+      </NavigationUl>
+    </nav>
   );
 };
 

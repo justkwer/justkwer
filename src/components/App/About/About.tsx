@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { H1, Section } from '../../../styled/tags';
 import { AboutStyled } from './styled';
-import MyRoutes from './MyRoutes/MyRoutes';
+import MyRoutes from '../../MyRoutes/MyRoutes';
 import Scrolling from './Scrolling/Scrolling';
 import { navigationAbout } from '../../../constants/constants';
 import { useNavigate } from 'react-router-dom';
@@ -19,7 +19,7 @@ const About = () => {
     }
   };
 
-  const handleScroll = (e: WheelEvent) => handleClick(e.deltaY > 0);
+  const handleScroll = (e: WheelEvent) => handleClick(e.deltaY < 0);
 
   useEffect(() => {
     window.addEventListener('wheel', handleScroll);
@@ -31,10 +31,10 @@ const About = () => {
   return (
     <AboutStyled>
       <Section>
-        <Scrolling click={handleClick} up={true} page={page} />
+        <Scrolling click={handleClick} up={true} />
         <H1>Alex Moore</H1>
         <MyRoutes />
-        <Scrolling click={handleClick} up={false} page={page} />
+        <Scrolling click={handleClick} up={false} />
       </Section>
     </AboutStyled>
   );

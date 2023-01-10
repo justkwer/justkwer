@@ -1,13 +1,13 @@
 import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import ErrorPage from '../../ErrorPage/ErrorPage';
-import { navigationAbout } from '../../../../constants/constants';
+import ErrorPage from '../App/ErrorPage/ErrorPage';
+import { navigationAbout } from '../../constants/constants';
 
-const AboutMe = React.lazy(() => import('../AboutMe/AboutMe'));
-const Education = React.lazy(() => import('../Education/Education'));
-const WhatIWant = React.lazy(() => import('../WhatIWant/WhatIWant'));
-const WatchMe = React.lazy(() => import('../WatchMe/WatchMe'));
-const ContactMe = React.lazy(() => import('../ContactMe/ContactMe'));
+const AboutMe = React.lazy(() => import('../App/About/AboutMe/AboutMe'));
+const Education = React.lazy(() => import('../App/About/Education/Education'));
+const WhatIWant = React.lazy(() => import('../App/About/WhatIWant/WhatIWant'));
+const WatchMe = React.lazy(() => import('../App/About/WatchMe/WatchMe'));
+const ContactMe = React.lazy(() => import('../App/About/ContactMe/ContactMe'));
 
 const MyRoutes = () => {
   const [about, education, whatIWant, watch, contact] = navigationAbout;

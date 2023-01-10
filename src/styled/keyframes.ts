@@ -65,10 +65,8 @@ export const pictureKeyframes = keyframes`
   99% {
     left: 0;
     position: relative;
-
   }
   100% {
-    
     opacity: 1;
   }
 `;
