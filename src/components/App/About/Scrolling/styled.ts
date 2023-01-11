@@ -2,16 +2,12 @@ import styled from 'styled-components';
 
 export const ScrollingStyled = styled.div<{ up: boolean }>`
   opacity: 0;
-  animation: ${({ theme }) => theme.keyframes.animation.opacity}
+  animation: ${({ theme }) => theme.keyframes.animation.button}
     ${({ theme }) => theme.keyframes.duration[0]} forwards;
   animation-delay: ${({ theme }) => theme.keyframes.delay[2]};
   cursor: pointer;
   ${({ theme }) => theme.flex.column};
   gap: 10px;
-
-  &:hover {
-    opacity: 1;
-  }
 
   svg {
     fill: ${({ theme }) => theme.colors.white};

@@ -33,6 +33,22 @@ export const subtitleKeyframes = keyframes`
   }
 `;
 
+export const subtitleRotateKeyframes = keyframes`
+  0% {
+    position: relative;
+    bottom: 100px;
+    opacity: 0;
+  }
+  99% {
+    bottom: 0;
+    position: relative;
+  }
+  100% {
+    position: static;
+    opacity: 1;
+  }
+`;
+
 export const shineKeyframes = keyframes`
   40% {
     -webkit-text-fill-color: initial;
@@ -53,6 +69,12 @@ export const opacityKeyframes = keyframes`
   }
   100% {
     opacity: 1;
+  }
+`;
+
+export const opacityKeyframesButton = keyframes`
+  100% {
+    opacity: .8;
   }
 `;
 

@@ -31,10 +31,10 @@ const About = () => {
   return (
     <AboutStyled>
       <Section>
-        <Scrolling click={handleClick} up={true} />
+        {page !== 0 && <Scrolling click={handleClick} up={true} />}
         <H1>Alex Moore</H1>
         <MyRoutes />
-        <Scrolling click={handleClick} up={false} />
+        {page !== navLength && <Scrolling click={handleClick} up={false} />}
       </Section>
     </AboutStyled>
   );

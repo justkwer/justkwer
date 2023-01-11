@@ -2,9 +2,11 @@ import { DefaultTheme } from 'styled-components';
 import { ThemeEnum } from '../interfaces/styled.model';
 import {
   opacityKeyframes,
+  opacityKeyframesButton,
   pictureKeyframes,
   shineKeyframes,
   subtitleKeyframes,
+  subtitleRotateKeyframes,
   titleKeyframes,
 } from './keyframes';
 
@@ -77,9 +79,11 @@ export const theme = {
     animation: {
       title: titleKeyframes,
       subtitle: subtitleKeyframes,
+      subtitleRotate: subtitleRotateKeyframes,
       shine: shineKeyframes,
       opacity: opacityKeyframes,
       picture: pictureKeyframes,
+      button: opacityKeyframesButton,
     },
   },
 };

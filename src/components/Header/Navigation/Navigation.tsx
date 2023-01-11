@@ -1,20 +1,20 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { navigationList } from '../../../constants/constants';
-import { NavigationLi, NavigationUl } from './styled';
+import { NavigationLiStyled, NavigationUlStyled } from './styled';
 
 const Navigation = () => {
   return (
     <nav>
-      <NavigationUl>
+      <NavigationUlStyled>
         {navigationList.map(({ href, text }) => (
-          <NavigationLi key={text}>
+          <NavigationLiStyled key={text}>
             <NavLink end to={href}>
               {text}
             </NavLink>
-          </NavigationLi>
+          </NavigationLiStyled>
         ))}
-      </NavigationUl>
+      </NavigationUlStyled>
     </nav>
   );
 };

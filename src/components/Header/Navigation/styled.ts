@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const NavigationUl = styled.ul`
+export const NavigationUlStyled = styled.ul`
   display: flex;
   gap: 35px;
 `;
 
-export const NavigationLi = styled.li`
+export const NavigationLiStyled = styled.li`
   list-style-type: none;
 
   a {

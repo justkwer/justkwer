@@ -5,6 +5,10 @@ export const MeOnMapStyled = styled(MapContainer)`
   border: 2px solid ${({ theme }) => theme.colors.magenta};
   height: 600px;
   width: 100vw;
+  opacity: 0;
+  animation: ${({ theme }) => theme.keyframes.animation.opacity}
+    ${({ theme }) => theme.keyframes.duration[0]} forwards;
+  animation-delay: ${({ theme }) => theme.keyframes.delay[1]};
 
   .leaflet-right {
     display: none;

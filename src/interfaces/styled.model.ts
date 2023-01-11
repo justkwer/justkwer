@@ -74,9 +74,11 @@ export interface InterfaceTheme {
     animation: {
       title: Keyframes;
       subtitle: Keyframes;
+      subtitleRotate: Keyframes;
       shine: Keyframes;
       opacity: Keyframes;
       picture: Keyframes;
+      button: Keyframes;
     };
   };
 }
