@@ -36,7 +36,6 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://justkwer.github.io/curriculum-vitae",
   "browserslist": {
     "production": [
       ">0.2%",
