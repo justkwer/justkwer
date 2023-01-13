@@ -1,6 +1,6 @@
 export const navigationList = [
   { href: '/about', text: 'About' },
-  { href: '/games', text: 'Games' },
+  { href: '/projects', text: 'Projects' },
 ];
 
 export const notFoundPage = '/404';

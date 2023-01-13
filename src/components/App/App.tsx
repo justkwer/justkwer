@@ -8,7 +8,7 @@ import { useToggleLightMode } from '../Theme/Theme';
 
 const Main = React.lazy(() => import('./Main/Main'));
 const About = React.lazy(() => import('./About/About'));
-const Games = React.lazy(() => import('./Games/Games'));
+const Projects = React.lazy(() => import('./Projects/Projects'));
 
 function App() {
   const { isLightMode } = useToggleLightMode();
@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Main />} />
             <Route path="/about/*" element={<About />} />
-            <Route path="/games" element={<Games />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="404" element={<ErrorPage />} />
             <Route path="*" element={<Navigate to="404" replace />} />
           </Route>
