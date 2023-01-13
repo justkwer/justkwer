@@ -9,3 +9,5 @@
 ## 💻 Codewars:
 [![Codewars](https://www.codewars.com/users/Kwer/badges/large?logo=codewars&logoColor=white)](https://www.codewars.com/users/Kwer) 
 
+## <img src="https://raw.githubusercontent.com/justkwer/justkwer/curriculum-vitae/public/favicon.ico" width="25" height="25" /> [<span style="color: #0B2349; background: linear-gradient(45deg, #B21CC4, #5836AC); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">Curriculum Vitae</span>](https://alexmoore.netlify.app/)
+
