@@ -1,5 +1,5 @@
 import React from 'react';
-import { Svg, SvgLink } from '../../styled/tags';
+import { Svg, SvgLink } from '../../core/theme';
 
 const getGradient = () => {
   return (
