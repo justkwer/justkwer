@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-const fonts = css`
+const font = css`
   letter-spacing: ${({ theme }) => theme.fonts.spacing.secondary};
   line-height: ${({ theme }) => theme.fonts.height.secondary};
 `;
@@ -8,11 +8,11 @@ const fonts = css`
 export const H1 = styled.h1`
   font-weight: 700;
   font-size: 4rem;
-  ${fonts}
+  ${font}
 `;
 
 export const H2 = styled.h2`
-  ${fonts};
+  ${font};
   font-weight: 700;
   font-size: 3rem;
   -webkit-text-fill-color: transparent;

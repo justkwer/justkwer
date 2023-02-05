@@ -13,3 +13,5 @@ export {
 } from './keyframes';
 
 export { GlobalStyles } from './GlobalStyles';
+
+export { fonts } from './fonts';
