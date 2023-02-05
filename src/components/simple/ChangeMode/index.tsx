@@ -4,9 +4,10 @@ import { useToggleLightMode } from '../../ordinary';
 
 export const ChangeMode = ({ isOn }: { isOn: boolean }) => {
   const { toggleLightMode } = useToggleLightMode();
+
   return (
-    <div onClick={toggleLightMode}>
+    <button onClick={toggleLightMode}>
       <SvgGenerator id={isOn ? 'light' : 'dark'} />
-    </div>
+    </button>
   );
 };

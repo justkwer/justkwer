@@ -12,4 +12,4 @@ export {
   pictureKeyframes,
 } from './keyframes';
 
-export { GlobalStyles } from './globalStyles';
+export { GlobalStyles } from './GlobalStyles';

@@ -10,8 +10,3 @@ export const HeaderStyled = styled.header`
     justify-content: space-between;
   }
 `;
-
-export const NavStyled = styled.div`
-  ${({ theme }) => theme.flex.row};
-  gap: 50px;
-`;

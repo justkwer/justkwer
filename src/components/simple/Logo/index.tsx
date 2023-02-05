@@ -6,9 +6,9 @@ export const Logo = () => (
   <LogoStyled to="/">
     <figure>
       <img src={ease} alt="ease" />
+      <figcaption>
+        <span>ease</span>
+      </figcaption>
     </figure>
-    <figcaption>
-      <span>ease</span>
-    </figcaption>
   </LogoStyled>
 );

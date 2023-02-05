@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, Fragment } from 'react';
 import Star from './Star';
 import { randomNum, width } from '../../../core/utils';
 
@@ -15,10 +15,10 @@ export const Stars = () => {
   }, [resize]);
 
   return (
-    <>
+    <Fragment>
       {Array.from({ length }).map((item, index) => (
         <Star key={index} top={randomNum()} left={randomNum()} />
       ))}
-    </>
+    </Fragment>
   );
 };

@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export const AboutMeStyled = styled.div`
+export const AboutMeStyled = styled.figure`
   ${({ theme }) => theme.flex.row};
   gap: 150px;
 
-  figure {
+  img {
     opacity: 0;
     animation: ${({ theme }) => theme.keyframes.animation.opacity}
       ${({ theme }) => theme.keyframes.duration[0]} forwards;

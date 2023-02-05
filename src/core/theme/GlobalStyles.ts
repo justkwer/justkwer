@@ -41,7 +41,9 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   svg, button {
+    border: none;
     transition: .3s;
+    background: none;
   }
 
   a {
