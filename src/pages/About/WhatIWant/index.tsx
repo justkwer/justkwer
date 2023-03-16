@@ -2,7 +2,7 @@ import React from 'react';
 import { BorderDown, H2 } from '../../../core/theme';
 import { WhatIDoDivStyled, WhatIDoStyled } from './styled';
 import { whatIWantToDo } from '../../../core/constants';
-import { Want } from '../../../components/simple';
+import { Want } from '../../../components';
 
 const WhatIWant = () => {
   return (
@@ -11,7 +11,7 @@ const WhatIWant = () => {
       <BorderDown />
       <WhatIDoDivStyled>
         {whatIWantToDo.map(toDo => (
-          <Want {...toDo} />
+          <Want {...toDo} key={toDo.title} />
         ))}
       </WhatIDoDivStyled>
     </WhatIDoStyled>

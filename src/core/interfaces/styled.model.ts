@@ -26,7 +26,6 @@ export interface InterfaceTheme {
     };
   };
   media: {
-    extraLarge: string;
     large: string;
     medium: string;
     small: string;

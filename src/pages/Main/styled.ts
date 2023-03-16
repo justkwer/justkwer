@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const MainStyled = styled.main`
   section {
-    ${({ theme }) => theme.flex.row};
-    gap: 100px;
-    margin: 0;
+    height: 100%;
+    ${({ theme }) => theme.flex.column};
+    justify-content: space-between;
 
     h1 {
+      z-index: -1;
       text-align: center;
       animation: ${({ theme }) => theme.keyframes.animation.title}
         ${({ theme }) => theme.keyframes.duration[0]} forwards;

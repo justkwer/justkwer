@@ -1,14 +1,12 @@
 import React from 'react';
 import { BorderLeft, H2, P } from '../../../core/theme';
 import { AboutMeStyled } from '../AboutMe/styled';
-import { YouTube } from '../../../components/ui';
+import { YouTube } from '../../../components';
 
 const WatchMe = () => {
   return (
     <AboutMeStyled>
-      <figure>
-        <YouTube />
-      </figure>
+      <YouTube />
       <figcaption>
         <H2>Watch me</H2>
         <BorderLeft />

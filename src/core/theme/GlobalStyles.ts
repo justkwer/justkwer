@@ -3,7 +3,7 @@ import { fonts } from './fonts';
 
 export const GlobalStyles = createGlobalStyle`
   ${fonts};
-  
+
   * {
     margin: 0;
     padding: 0;
@@ -21,20 +21,20 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
     height: 100%;
   }
-
-  body {
-    & > #root {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
+  
   #root {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
   }
-
+  
+  main {
+    height: 100%;
+  }
+  
   section {
     margin: auto;
   }
@@ -48,6 +48,10 @@ export const GlobalStyles = createGlobalStyle`
     transition: .3s;
     background: none;
   }
+  
+  button {
+    cursor: pointer;
+  }
 
   a {
     text-decoration: ${({ theme }) => theme.buttons.decoration};
@@ -56,8 +60,13 @@ export const GlobalStyles = createGlobalStyle`
   ul {
     list-style-type: none;
   }
-  
+
   ::-webkit-scrollbar {
     width: 0;
+  }
+  
+  figure {
+    margin-block: 0;
+    margin-inline: 0;
   }
 `;

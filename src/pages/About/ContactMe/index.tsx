@@ -1,6 +1,6 @@
 import React from 'react';
 import { WhatIDoStyled } from '../WhatIWant/styled';
-import { Map } from '../../../components/smart';
+import { Map } from '../../../components';
 import { BorderDown, H2 } from '../../../core/theme';
 
 const ContactMe = () => {

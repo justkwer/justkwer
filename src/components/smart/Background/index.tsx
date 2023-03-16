@@ -1,6 +1,6 @@
 import React from 'react';
 import { BackgroundStyled } from './styled';
-import { Stars } from '../../simple';
+import { Stars } from '../../';
 import { background } from '../../../assets';
 
 export const Background = () => (

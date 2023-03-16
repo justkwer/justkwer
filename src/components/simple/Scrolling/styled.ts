@@ -16,4 +16,12 @@ export const ScrollingStyled = styled.button<{ up: boolean }>`
   #arrow {
     transform: ${({ up }) => (up ? 'rotate(-90deg)' : 'rotate(90deg)')};
   }
+
+  @media (${({ theme }) => theme.media.mobile}) {
+    gap: 0;
+
+    #mouse {
+      height: 25px;
+    }
+  }
 `;

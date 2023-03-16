@@ -1,6 +1,6 @@
 export { theme } from './theme';
 
-export { H1, H2, P, Svg, SvgLink, BorderLeft, BorderDown, Section } from './tags';
+export { H1, H2, P, Svg, hover, Span, SvgLink, BorderLeft, BorderDown, Section } from './tags';
 
 export {
   titleKeyframes,

@@ -3,8 +3,8 @@ import { ErrorPageStyled } from './styled';
 import { Link } from 'react-router-dom';
 import { NotFoundMessage } from './NotFoundMessage';
 import { ErrorMessage } from './ErrorMessage';
-import { ErrorPageProp } from './Prop';
-import { Button } from '../../components/ui';
+import { ErrorPageProp } from './prop';
+import { Button } from '../../components';
 import { Section } from '../../core/theme';
 import { error } from '../../assets';
 

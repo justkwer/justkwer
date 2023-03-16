@@ -7,8 +7,7 @@ export const ErrorPageStyled = styled.main`
   top: 0;
   left: 0;
   ${({ theme }) => theme.flex.row};
-  
-  
+
   section {
     ${({ theme }) => theme.flex.row};
 
@@ -16,6 +15,14 @@ export const ErrorPageStyled = styled.main`
       img {
         max-width: 800px;
         height: 100%;
+
+        @media (${({ theme }) => theme.media.medium}) {
+          max-width: 300px;
+        }
+
+        @media (${({ theme }) => theme.media.small}) {
+          max-width: 200px;
+        }
       }
     }
 
@@ -25,12 +32,20 @@ export const ErrorPageStyled = styled.main`
       gap: 40px;
       align-items: center;
       text-align: center;
-      
+
       p {
         font-family: ${({ theme }) => theme.fonts.familyS};
         letter-spacing: ${({ theme }) => theme.fonts.spacing.primary};
+        max-width: 100%;
+      }
+    }
+
+    @media (${({ theme }) => theme.media.mobile}) {
+      flex-direction: column;
+
+      figcaption {
+        padding: 10px 30px;
       }
     }
   }
-}
 `;

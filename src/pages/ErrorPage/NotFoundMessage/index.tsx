@@ -1,5 +1,5 @@
 import React from 'react';
-import { H1 } from '../../../core/theme';
+import { H1, P } from '../../../core/theme';
 import { config } from './config';
 
 export const NotFoundMessage = () => {
@@ -7,7 +7,7 @@ export const NotFoundMessage = () => {
   return (
     <>
       <H1>{title}</H1>
-      <p>{subtitle}</p>
+      <P>{subtitle}</P>
     </>
   );
 };

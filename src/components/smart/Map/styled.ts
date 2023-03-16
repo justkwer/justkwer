@@ -3,7 +3,7 @@ import { MapContainer } from 'react-leaflet';
 
 export const MapStyled = styled(MapContainer)`
   border: 2px solid ${({ theme }) => theme.colors.magenta};
-  height: 600px;
+  height: 100%;
   width: 100vw;
   opacity: 0;
   animation: ${({ theme }) => theme.keyframes.animation.opacity}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { H1 } from '../../../core/theme';
-import { ErrorMessageProp } from './Prop';
+import { ErrorMessageProp } from './prop';
 
 export const ErrorMessage = ({ title, subtitle }: ErrorMessageProp) => {
   return (

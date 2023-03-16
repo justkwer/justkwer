@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-d
 import { Layout } from '..';
 import { loadingError } from '../../core/constants';
 
-import { Background } from '../../components/smart';
-import { useToggleLightMode } from '../../components/ordinary';
+import { useToggleLightMode, Background } from '../../components';
 
 const Main = React.lazy(() => import('../../pages/Main'));
 const About = React.lazy(() => import('../../pages/About'));

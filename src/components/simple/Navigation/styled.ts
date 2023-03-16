@@ -1,25 +1,31 @@
 import styled from 'styled-components';
+import { hover } from '../../../core/theme';
 
 export const NavigationStyled = styled.nav`
-  ${({ theme }) => theme.flex.row};
-  gap: 50px;
+  margin-left: auto;
 
   ul {
-    display: flex;
+    ${({ theme }) => theme.flex.row};
     gap: 35px;
+
+    @media (${({ theme }) => theme.media.large}) {
+      gap: 30px;
+    }
+    @media (${({ theme }) => theme.media.medium}) {
+      gap: 25px;
+    }
   }
 `;
 
 export const NavigationLiStyled = styled.li`
   a {
-    opacity: 0.7;
-    font-size: 1.2em;
+    ${hover};
     position: relative;
+    font-size: 1.2rem;
+    font-family: ${({ theme }) => theme.fonts.familyS};
 
-    &:hover,
     &:hover::after {
       width: 100%;
-      opacity: 1;
     }
 
     &::after {
@@ -39,6 +45,30 @@ export const NavigationLiStyled = styled.li`
       border-bottom: 3px solid ${({ theme }) => theme.colors.white};
       cursor: ${({ theme }) => theme.buttons.cursorD};
       opacity: 1;
+    }
+  }
+
+  @media (${({ theme }) => theme.media.large}) {
+    a {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (${({ theme }) => theme.media.medium}) {
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  @media (${({ theme }) => theme.media.small}) {
+    a {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (${({ theme }) => theme.media.mobile}) {
+    a {
+      font-size: 0.8rem;
     }
   }
 `;

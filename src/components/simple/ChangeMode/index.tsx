@@ -1,13 +1,14 @@
 import React from 'react';
-import { SvgGenerator } from '../../SvgGenerator/SvgGenerator';
-import { useToggleLightMode } from '../../ordinary';
+import { useToggleLightMode } from '../../';
+import { ChangeModeStyled } from './styled';
+import { ThemeDark, ThemeLight } from '../../../assets';
 
-export const ChangeMode = ({ isOn }: { isOn: boolean }) => {
-  const { toggleLightMode } = useToggleLightMode();
+export const ChangeMode = () => {
+  const { toggleLightMode, isLightMode } = useToggleLightMode();
 
   return (
-    <button onClick={toggleLightMode}>
-      <SvgGenerator id={isOn ? 'light' : 'dark'} />
-    </button>
+    <ChangeModeStyled onClick={toggleLightMode}>
+      {isLightMode ? <ThemeLight /> : <ThemeDark />}
+    </ChangeModeStyled>
   );
 };

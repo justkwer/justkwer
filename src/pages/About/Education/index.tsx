@@ -20,9 +20,7 @@ const Education = () => {
           and everything related to it for more than {getMyLearningFoolYears()} year.
         </P>
       </figcaption>
-      <figure>
-        <AboutMeImgStyled src={books} alt="Books" />
-      </figure>
+      <AboutMeImgStyled src={books} alt="Books" />
     </AboutMeStyled>
   );
 };

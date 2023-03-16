@@ -7,7 +7,11 @@ export const FooterStyled = styled.footer`
   animation-delay: ${({ theme }) => theme.keyframes.delay[2]};
 
   section {
-    ${({ theme }) => theme.flex.row};
-    justify-content: space-between;
+    ${({ theme }) => theme.flex.column};
+    gap: 20px;
+
+    span {
+      font-family: ${({ theme }) => theme.fonts.familyS};
+    }
   }
 `;

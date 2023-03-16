@@ -2,12 +2,12 @@ import React from 'react';
 import { BorderLeft, H2, P } from '../../../core/theme';
 import { AboutMeStyled } from './styled';
 import { getMyFoolYears } from '../../../core/utils';
-import { me } from '../../../assets';
+import { MyPhoto } from './MyPhoto';
 
 const AboutMe = () => {
   return (
     <AboutMeStyled>
-      <img src={me} alt="avatar" />
+      <MyPhoto />
       <figcaption>
         <H2>About me</H2>
         <BorderLeft />

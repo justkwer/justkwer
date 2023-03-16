@@ -8,5 +8,11 @@ export const HeaderStyled = styled.header`
   section {
     ${({ theme }) => theme.flex.row};
     justify-content: space-between;
+
+    @media (${({ theme }) => theme.media.small}) {
+      & > nav {
+        display: none;
+      }
+    }
   }
 `;

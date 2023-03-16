@@ -27,20 +27,19 @@ export const theme = {
   },
   sizes: {
     container: {
-      width: [1200, 960, 720, 540, 320],
-      padding: ['20px 40px', '0', '0', '0'],
+      width: [1920, 1200, 992, 768, 576],
+      padding: ['20px 40px', '15px 30px', '15px 20px', '10px 15px', '5px 10px'],
     },
   },
   media: {
-    extraLarge: '(max-width: 1110px)',
-    large: '(max-width: 960px)',
-    medium: '(max-width: 720px)',
-    small: '(max-width: 540px)',
-    mobile: '(max-width: 360px)',
+    large: '(max-width: 1200px)',
+    medium: '(max-width: 992px)',
+    small: '(max-width: 768px)',
+    mobile: '(max-width: 576px)',
   },
   fonts: {
-    familyP: 'Equinox Bold, sans-serif',
-    familyS: 'Nunito Sans, sans-serif',
+    familyP: 'Nunito Sans, sans-serif',
+    familyS: 'Equinox Bold, sans-serif',
     style: 'Bold',
     weight: '400',
     size: '22px',
