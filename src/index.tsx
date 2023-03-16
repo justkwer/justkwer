@@ -1,9 +1,9 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-import GlobalStyles from './styled/globalStyles';
-import App from './components/App/App';
-import { LightModeProvider, ThemeProvider } from './components/Theme/Theme';
-import Signature from './components/Signature/Signature';
+import { GlobalStyles } from './core/theme';
+
+import { LightModeProvider, ThemeProvider, Signature } from './components';
+import { App } from './routes';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLDivElement);
 

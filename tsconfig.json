@@ -22,7 +22,6 @@
   },
   "include": [
     "./src/**/*",
-    "styled.d.ts",
-    "./src/assets/img/img.d.ts"
+    "./src/core/types"
   ]
 }
