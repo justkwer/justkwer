@@ -32,9 +32,6 @@
       "@core/*": [
         "core/*"
       ],
-      "@game": [
-        "game"
-      ],
       "@layout": [
         "layout"
       ]
