@@ -44,5 +44,5 @@ export const StarStyled = styled.span`
       transform: scale(0.9) translate(2vw, 0vh);
       opacity: 0.9;
     }
-  } ;
+  }
 `;

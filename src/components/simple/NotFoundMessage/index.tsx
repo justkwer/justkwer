@@ -1,4 +1,3 @@
-import React from 'react';
 import { H1, P } from '@core/theme';
 import { notFoundMessage } from '@core/constants';
 

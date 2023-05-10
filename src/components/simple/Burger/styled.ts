@@ -15,10 +15,10 @@ export const BurgerStyled = styled.div`
   }
 
   & > button {
+    ${hover};
     width: 100%;
     height: 100%;
     position: relative;
-    ${hover};
     padding: 5.5px;
     background: linear-gradient(
       90deg,
@@ -69,10 +69,12 @@ export const BurgerWrapStyled = styled.div<ActiveType>`
   position: absolute;
   width: max-content;
   top: 50px;
-  right: -150px;
+  right: 0;
+  transform: ${({ active }) =>
+    active ? 'translateX(0);' : 'translateX(150%);'};
+  display: block;
   padding: ${({ theme }) => theme.sizes.container.padding[4]};
-  ${({ active }) => active && 'right: 0;'};
-  transition-duration: 0.3s;
+  transition: transform 0.3s ease-in-out;
   background: ${({ theme }) => theme.colors.dark};
   border-radius: 10px;
 

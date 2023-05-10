@@ -1,11 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-import { fonts } from './fonts';
+import { fonts } from '@core/theme/fonts';
 
 export const GlobalStyles = createGlobalStyle`
-
-  ${fonts}
-
-  ;
 
   * {
     margin: 0;
@@ -21,21 +17,23 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html, body {
+    ${fonts};
     width: 100%;
     height: 100%;
+    --color-stop: ${({ theme }) => theme.colors.magenta};
+    --color-bot: ${({ theme }) => theme.colors.primary};
   }
 
-  #root {
+  #__next {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
   }
 
   main {
-    height: 100%;
+    flex-grow: 1;
   }
 
   section {
@@ -57,7 +55,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    text-decoration: ${({ theme }) => theme.buttons.decoration};
+    text-decoration: none;
   }
 
   ul {

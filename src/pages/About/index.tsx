@@ -3,7 +3,8 @@ import { H1, Section } from '@core/theme';
 import { AboutStyled } from './styled';
 import { navigationAbout } from '@core/constants';
 import { Scrolling } from '@components';
-import { AboutLayout } from '@layout';
+import { MainLayout } from '@layout';
+import AboutMe from './AboutMe';
 
 const About = () => {
   const [page, setPage] = useState(0);
@@ -26,14 +27,16 @@ const About = () => {
   });
 
   return (
-    <AboutStyled page={page === 0}>
-      <Section>
-        <Scrolling click={handleClick} up={true} />
-        <H1>Alex Moore</H1>
-        <AboutLayout />
-        {page !== navLength && <Scrolling click={handleClick} up={false} />}
-      </Section>
-    </AboutStyled>
+    <MainLayout>
+      <AboutStyled page={page === 0}>
+        <Section>
+          <Scrolling click={handleClick} up={true} />
+          <H1>Alex Moore</H1>
+          <AboutMe />
+          {page !== navLength && <Scrolling click={handleClick} up={false} />}
+        </Section>
+      </AboutStyled>
+    </MainLayout>
   );
 };
 

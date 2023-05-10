@@ -7,19 +7,13 @@ const font = css`
 
 export const hover = css`
   opacity: 0.8;
+
   &:hover {
     opacity: 1;
   }
 `;
 
 export const Svg = css`
-  fill: url(#gradient) #fff;
-
-  #gradient {
-    --color-stop: ${({ theme }) => theme.colors.magenta};
-    --color-bot: ${({ theme }) => theme.colors.primary};
-  }
-
   @media (${({ theme }) => theme.media.large}) {
     width: 42px;
     height: 42px;

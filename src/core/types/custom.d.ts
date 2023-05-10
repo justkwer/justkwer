@@ -1,12 +1,9 @@
 declare module '*.svg' {
-  import * as React from 'react';
+  import type { ReactElement, SVGProps } from 'react';
 
-  export const ReactComponent: FunctionComponent<React.SVGProps<SVGSVGElement>>;
-
-  const src: string;
-  export default src;
+  const content: (props: SVGProps<SVGElement>) => ReactElement;
+  export default content;
 }
-
 declare module '*.ttf';
 declare module '*.woff';
 declare module '*.webp';

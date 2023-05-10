@@ -10,75 +10,65 @@ export const LogoStyled = styled(Link)`
     align-items: center;
     gap: 5px;
 
-    img {
-      max-width: 50px;
-      max-height: 50px;
+    svg {
+      width: 50px;
+      height: 50px;
     }
 
-    button {
-      span {
-        font-size: 1.6rem;
-        color: ${({ theme }) => theme.colors.grey};
-      }
+    span {
+      font-size: 1.6rem;
+      color: ${({ theme }) => theme.colors.grey};
     }
   }
 
   @media (${({ theme }) => theme.media.large}) {
     figure {
-      img {
-        max-width: 45px;
-        max-height: 45px;
+      svg {
+        width: 45px;
+        height: 45px;
       }
 
-      button {
-        span {
-          font-size: 1.5rem;
-        }
+      span {
+        font-size: 1.5rem;
       }
     }
   }
 
   @media (${({ theme }) => theme.media.medium}) {
     figure {
-      img {
-        max-width: 40px;
-        max-height: 40px;
+      svg {
+        width: 40px;
+        height: 40px;
       }
 
-      button {
-        span {
-          font-size: 1.4rem;
-        }
+      span {
+        font-size: 1.4rem;
       }
     }
   }
 
   @media (${({ theme }) => theme.media.small}) {
     figure {
-      img {
-        max-width: 35px;
-        max-height: 35px;
+      svg {
+        width: 35px;
+        height: 35px;
       }
 
-      button {
-        span {
-          font-size: 1.3rem;
-        }
+      span {
+        font-size: 1.3rem;
       }
     }
   }
 
   @media (${({ theme }) => theme.media.mobile}) {
     figure {
-      img {
-        max-width: 30px;
-        max-height: 30px;
+      svg {
+        width: 30px;
+        height: 30px;
       }
 
-      button {
-        span {
-          font-size: 1.2rem;
-        }
+      span {
+        font-size: 1.2rem;
       }
     }
   }

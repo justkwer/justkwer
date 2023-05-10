@@ -1,8 +1,4 @@
-const nextConfig = {
-  compiler: {
-    styledComponents: true,
-  },
-  reactStrictMode: true,
+module.exports = {
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
@@ -12,6 +8,8 @@ const nextConfig = {
 
     return config;
   },
+  compiler: {
+    styledComponents: true,
+  },
+  reactStrictMode: true,
 };
-
-module.exports = nextConfig;

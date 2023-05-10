@@ -1,16 +1,14 @@
 import { LogoStyled } from './styled';
 import { Span } from '@core/theme';
-import Image from 'next/image';
 import { PathsToPage } from '@core/constants';
+import Ease from '@public/svg/ease.svg';
 
 export const Logo = () => (
   <LogoStyled href={PathsToPage.Main}>
     <figure>
-      <Image src="/image/ease" alt="ease" width={50} height={50} />
+      <Ease />
       <figcaption>
-        <button>
-          <Span>ease</Span>
-        </button>
+        <Span>ease</Span>
       </figcaption>
     </figure>
   </LogoStyled>

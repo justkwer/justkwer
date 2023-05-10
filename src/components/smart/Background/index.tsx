@@ -1,10 +1,9 @@
 import { BackgroundStyled } from './styled';
-import { Stars } from '../../';
 import Image from 'next/image';
+import background from '@public/image/background.webp';
 
 export const Background = () => (
   <BackgroundStyled>
-    <Image src="/images/background" alt="background" />
-    <Stars />
+    <Image src={background} alt="background" />
   </BackgroundStyled>
 );

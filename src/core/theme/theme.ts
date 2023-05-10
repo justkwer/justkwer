@@ -63,7 +63,8 @@ export const theme = {
   },
   flex: {
     row: 'display: flex; justify-content: center;  align-items: center;',
-    column: 'display: flex; flex-direction: column; justify-content: center; align-items: center;',
+    column:
+      'display: flex; flex-direction: column; justify-content: center; align-items: center;',
   },
   filter: {
     primary: 'drop-shadow(20 0 2px rgba(24, 92, 255, 0.04))',

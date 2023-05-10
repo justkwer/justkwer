@@ -6,7 +6,7 @@ import {
   useState,
 } from 'react';
 import { ThemeProvider as SCThemeProvider } from 'styled-components';
-import { darkTheme, lightTheme } from '@core/theme/theme';
+import { darkTheme, lightTheme } from '@core/theme';
 
 const LightModeContext = createContext({
   isLightMode: true,

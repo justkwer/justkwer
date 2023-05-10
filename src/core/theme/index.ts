@@ -1,4 +1,4 @@
-export { theme } from './theme';
+export { theme, lightTheme, darkTheme } from './theme';
 
 export {
   H1,

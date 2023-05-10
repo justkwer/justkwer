@@ -2,13 +2,14 @@ import Image from 'next/image';
 import { BorderLeft, H2, P } from '@core/theme';
 import { AboutMeStyled, MyPhotoStyled } from './styled';
 import { getMyFoolYears } from '@core/utils';
+import me from '@public/image/me.webp';
 
 const AboutMe = () => {
   return (
     <AboutMeStyled>
       <MyPhotoStyled>
         <div />
-        <Image src="./image/me" alt="avatar" />
+        <Image src={me} alt="avatar" />
       </MyPhotoStyled>
       <figcaption>
         <H2>About me</H2>

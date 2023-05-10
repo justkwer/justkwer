@@ -1,4 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 502.000000 626.000000">
+    <defs>
+        <linearGradient id="myGradient" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-opacity="0"/>
+            <stop offset="1%" stop-opacity="0.1"/>
+            <stop offset="2%" stop-opacity="0.2"/>
+            <stop offset="3%" stop-opacity="0.3"/>
+            <stop offset="4%" stop-opacity="0.4"/>
+            <stop offset="5%" stop-opacity="0.5"/>
+            <stop offset="10%" stop-opacity="0.6"/>
+            <stop offset="15%" stop-opacity="0.7"/>
+            <stop offset="20%" stop-opacity="0.8"/>
+            <stop offset="25%" stop-opacity="0.9"/>
+            <stop offset="30%" stop-opacity="1"/>
+        </linearGradient>
+    </defs>
     <g transform="translate(0.000000,626.000000) scale(0.100000,-0.100000)">
         <path
                 d="M1855 6251 c-31 -14 -66 -56 -151 -181 -126 -187 -212 -296 -365
@@ -34,7 +49,7 @@
 37 63 237 116 443 146 573 225 810 357 1075 94 187 161 261 272 300 100 35
 199 98 360 227 36 29 84 56 123 69 65 21 139 72 186 128 35 42 36 93 3 126
 -22 22 -24 29 -14 55 21 61 -17 103 -137 150 -78 30 -203 92 -285 141 -71 42
--114 53 -145 40z"
+-114 53 -145 40z" fill="url(#myGradient)"
         />
     </g>
 </svg>

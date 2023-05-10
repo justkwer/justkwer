@@ -4,21 +4,21 @@ export const fonts = css`
   @font-face {
     font-family: 'Equinox Bold';
     font-weight: 400;
-    src: localFont({src: local('./equinox/equinox-regular.woff')});
+    src: url('/fonts/equinox/equinox-regular.woff') format('woff2');
   }
   @font-face {
     font-family: 'Equinox Bold';
     font-weight: 700;
-    src: localFont({src: local('./equinox/equinox-bold.woff')});
+    src: url('/fonts/equinox/equinox-bold.woff') format('woff2');
   }
   @font-face {
     font-family: 'Nunito Sans';
     font-weight: 400;
-    src: localFont({src: local('./nunito/nunito-regular.ttf')});
+    src: url('/fonts/nunito/nunito-regular.ttf') format('ttf');
   }
   @font-face {
     font-family: 'Nunito Sans';
     font-weight: 700;
-    src: localFont({src: local('./nunito/nunito-bold.ttf')});
+    src: url('/fonts/nunito/nunito-bold.ttf') format('ttf');
   }
 `;
