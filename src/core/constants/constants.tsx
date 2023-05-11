@@ -7,6 +7,8 @@ import Instagram from '@public/svg/instagram.svg';
 import Web from '@public/svg/web.svg';
 import Mobile from '@public/svg/mobile.svg';
 import Games from '@public/svg/games.svg';
+import { AboutMe, ContactMe, Education, WatchMe, WhatIWant } from '@components';
+import { getMyLearningFoolYears } from '@core/utils';
 
 export const social = [
   {
@@ -72,3 +74,19 @@ export const notFoundMessage = {
   subtitle:
     " You must have picked the wrong door because i haven't been able to lay my eye on the page you've been searching for.",
 };
+
+export const aboutContent = [
+  <AboutMe key="about" />,
+  <Education key="education" />,
+  <WhatIWant key="whatIWant" />,
+  <WatchMe key="watchMe" />,
+  <ContactMe key="contactMe" />,
+];
+
+export const aboutMe = `Hi there! My name is Alex. I’m frontend developer with ${getMyLearningFoolYears()} years experience. I usually write in React and Next, I also study Three.js (I have a lot of experience in 3D modeling). I am interested in information technologies and how they transform our lives. I'd like to become a website developer or create games. Open to remote work offers or ready to consider moving.`;
+
+export const education =
+  'Throughout my life I have had to learn a lot. If we talk about information technologies related to the Web, these are: HTML, CSS, JavaScript, TypeScript, Git, React, Redux (Saga, RTK), Styled-components, Next.js, REST API, Three.js. I am currently studying game engine.';
+
+export const watchMe =
+  'If you do not trust the &quot;dry text&quot; and in order to recognize a person you need to look at him, then especially for you I recorded a short video about me. It was so cold that my tongue stuttered and my mind forgot the words.';

@@ -18,6 +18,7 @@ export interface InterfaceTheme {
     pink: string;
     red: string;
     white: string;
+    yellow: string;
   };
   sizes: {
     container: {

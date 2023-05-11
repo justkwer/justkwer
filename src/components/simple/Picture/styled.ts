@@ -23,9 +23,21 @@ export const PictureStyled = styled.figure`
         ${({ theme }) => theme.keyframes.duration[0]} forwards,
       ${({ theme }) => theme.keyframes.animation.shine}
         ${({ theme }) => theme.keyframes.duration[0]} forwards;
-    animation-delay: 0.5s;
+    animation-delay: ${({ theme }) => theme.keyframes.delay[0]};
     -webkit-text-fill-color: initial;
     -webkit-text-stroke-width: 0;
+  }
+
+  p {
+    opacity: 0;
+    animation: ${({ theme }) => theme.keyframes.animation.subtitle}
+      ${({ theme }) => theme.keyframes.duration[0]} forwards;
+    animation-delay: ${({ theme }) => theme.keyframes.delay[2]};
+
+    strong,
+    a {
+      color: ${({ theme }) => theme.colors.yellow};
+    }
   }
 
   @media (${({ theme }) => theme.media.large}) {

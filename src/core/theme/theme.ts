@@ -24,6 +24,7 @@ export const theme = {
     pink: '#d63384',
     red: '#C14040',
     white: '#FFFFFF',
+    yellow: '#FFFF00',
   },
   sizes: {
     container: {

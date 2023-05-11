@@ -1,4 +1,4 @@
-export { PathsToPage, navigationList, navigationAbout } from './router';
+export { PathsToPage, navigationList } from './router';
 
 export {
   social,
@@ -6,4 +6,8 @@ export {
   mapProps,
   loadingError,
   notFoundMessage,
+  aboutContent,
+  aboutMe,
+  education,
+  watchMe,
 } from './constants';

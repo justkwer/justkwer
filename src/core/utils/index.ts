@@ -3,6 +3,5 @@ export {
   width,
   randomNum,
   getFoolYears,
-  getMyFoolYears,
   getMyLearningFoolYears,
 } from './functions';

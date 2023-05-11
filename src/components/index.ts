@@ -10,12 +10,16 @@ export { Navigation } from './simple/Navigation';
 export { Scrolling } from './simple/Scrolling';
 export { Signature } from './simple/Signature';
 export { Social } from './simple/Social';
-export { Stars } from './simple/Stars';
 export { Want } from './simple/Want';
 export { Burger } from './simple/Burger';
 export { NotFoundMessage } from './simple/NotFoundMessage';
 export { ErrorMessage } from './simple/ErrorMessage';
 export { Picture } from './simple/Picture';
+export { AboutMe } from './simple/AboutMe';
+export { ContactMe } from './simple/ContactMe';
+export { Education } from './simple/Education';
+export { WatchMe } from './simple/WatchMe';
+export { WhatIWant } from './simple/WhatIWant';
 
 export { Background } from './smart/Background';
 
