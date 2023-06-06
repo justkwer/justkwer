@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const AboutStyled = styled.main<{ page?: boolean }>`
   height: 100%;
-  z-index: -1;
 
   section {
     ${({ theme }) => theme.flex.column};

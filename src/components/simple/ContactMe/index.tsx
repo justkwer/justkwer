@@ -9,7 +9,7 @@ const Map = dynamic(() => import('../../smart/Map'), {
 export const ContactMe = () => {
   return (
     <WhatIDoStyled>
-      <H2>ContactMe</H2>
+      <H2>Contact Me</H2>
       <BorderDown />
       <Map />
     </WhatIDoStyled>

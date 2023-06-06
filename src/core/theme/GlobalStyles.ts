@@ -22,6 +22,7 @@ export const GlobalStyles = createGlobalStyle`
     height: 100%;
     --color-stop: ${({ theme }) => theme.colors.magenta};
     --color-bot: ${({ theme }) => theme.colors.primary};
+    overflow-x: hidden;
   }
 
   #__next {

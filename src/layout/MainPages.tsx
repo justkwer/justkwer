@@ -6,22 +6,17 @@ import {
   LightModeProvider,
   Signature,
   ThemeProvider,
-  useToggleLightMode,
 } from '@components';
 
-export const MainLayout: FC<PropsWithChildren> = ({ children }) => {
-  const { isLightMode } = useToggleLightMode();
-
-  return (
-    <LightModeProvider>
-      <ThemeProvider>
-        <GlobalStyles />
-        <Header />
-        {children}
-        <Footer />
-        <Signature />
-        {isLightMode && <Background />}
-      </ThemeProvider>
-    </LightModeProvider>
-  );
-};
+export const MainLayout: FC<PropsWithChildren> = ({ children }) => (
+  <LightModeProvider>
+    <ThemeProvider>
+      <GlobalStyles />
+      <Background />
+      <Header />
+      {children}
+      <Footer />
+      <Signature />
+    </ThemeProvider>
+  </LightModeProvider>
+);

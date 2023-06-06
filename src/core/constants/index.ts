@@ -6,7 +6,6 @@ export {
   mapProps,
   loadingError,
   notFoundMessage,
-  aboutContent,
   aboutMe,
   education,
   watchMe,

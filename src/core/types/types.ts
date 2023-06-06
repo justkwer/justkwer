@@ -1,3 +1,5 @@
+import { MouseEvent } from 'react';
+
 export type MapProp = {
   coords: [number, number];
   zoom: number;
@@ -34,3 +36,16 @@ export type WantGeneratorProp = {
   subtitle: string;
   svg: JSX.Element;
 };
+
+export type MouseEventType = (e: MouseEvent<HTMLElement>) => void;
+
+export type MouseEventClick = {
+  click: MouseEventType;
+};
+
+export type WindowSizeState = {
+  width: undefined | number;
+  height: undefined | number;
+};
+
+export type Star = (time: number) => void;

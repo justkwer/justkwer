@@ -1,27 +1,54 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { H1, Section } from '@core/theme';
 import { AboutStyled } from './styled';
-import { aboutContent } from '@core/constants';
-import { Scrolling } from '@components';
+
+import {
+  AboutMe,
+  ContactMe,
+  Education,
+  Scrolling,
+  WatchMe,
+  WhatIWant,
+} from '@components';
+
 import { MainLayout } from '@layout';
+
+const aboutContent = [
+  <AboutMe key="about" />,
+  <Education key="education" />,
+  <WhatIWant key="whatIWant" />,
+  <WatchMe key="watchMe" />,
+  <ContactMe key="contactMe" />,
+];
+
+const navLength = aboutContent.length - 1;
 
 const About = () => {
   const [page, setPage] = useState(0);
-  const navLength = aboutContent.length - 1;
+  const [disable, setDisable] = useState(false);
 
-  const handleClick = (e: boolean) => {
-    const newPage = e ? page - 1 : page + 1;
-    if (newPage <= navLength && newPage >= 0) setPage(newPage);
-  };
+  const handleClick = useCallback(
+    (e: boolean) => {
+      if (disable) return;
+      setDisable(true);
+      const newPage = e ? page - 1 : page + 1;
+      if (newPage <= navLength && newPage >= 0) setPage(newPage);
+      setTimeout(() => setDisable(false), 1000);
+    },
+    [page, disable],
+  );
 
-  const handleScroll = (e: WheelEvent) => handleClick(e.deltaY < 0);
+  const handleScroll = useCallback(
+    (e: WheelEvent) => handleClick(e.deltaY < 0),
+    [handleClick],
+  );
 
   useEffect(() => {
     window.addEventListener('wheel', handleScroll);
     return () => {
       window.removeEventListener('wheel', handleScroll);
     };
-  });
+  }, [handleScroll]);
 
   return (
     <MainLayout>

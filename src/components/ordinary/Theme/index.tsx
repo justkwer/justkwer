@@ -15,6 +15,7 @@ const LightModeContext = createContext({
 
 const LightModeProvider: FC<PropsWithChildren> = ({ children }) => {
   const [isLightMode, setLightMode] = useState(true);
+
   const toggleLightMode = () => setLightMode(!isLightMode);
 
   return (

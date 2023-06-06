@@ -10,7 +10,7 @@ export const Picture = () => (
     <figcaption>
       <H2>is real</H2>
       <p>
-        <a href="/Alex-Moore.pdf" download="Alex Moore.pdf">
+        <a href="/Alex-Yakovlev.pdf" download="Alex Yakovlev.pdf">
           click
         </a>
         &ensp;to download or&ensp;

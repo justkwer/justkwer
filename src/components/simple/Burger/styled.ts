@@ -85,13 +85,3 @@ export const BurgerWrapStyled = styled.div<ActiveType>`
     }
   }
 `;
-
-export const BurgerFieldStyled = styled.div<ActiveType>`
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  z-index: -2;
-  visibility: ${({ active }) => (active ? 'visible' : 'hidden')};
-`;

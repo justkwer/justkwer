@@ -1,7 +1,1 @@
-export {
-  getRandom,
-  width,
-  randomNum,
-  getFoolYears,
-  getMyLearningFoolYears,
-} from './functions';
+export { getRandom, getRandomOne, getFoolYears } from './functions';

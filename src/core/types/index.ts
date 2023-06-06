@@ -6,4 +6,8 @@ export type {
   ActiveType,
   ScrollingProps,
   WantGeneratorProp,
+  MouseEventClick,
+  MouseEventType,
+  WindowSizeState,
+  Star,
 } from './types';
