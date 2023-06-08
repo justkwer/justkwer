@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { H1, Section } from '@core/theme';
-import { AboutStyled } from './styled';
+import { H1, Section, AboutStyled } from '@core/theme';
 
 import {
   AboutMe,

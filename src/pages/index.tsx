@@ -1,6 +1,5 @@
-import { H1, Section } from '@core/theme';
+import { H1, Section, MainPageStyled } from '@core/theme';
 import { Picture } from '@components';
-import { MainPageStyled } from './styled';
 
 const MainPage = () => {
   return (

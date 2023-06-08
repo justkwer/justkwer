@@ -11,6 +11,5 @@ module.exports = {
   compiler: {
     styledComponents: true,
   },
-  pageExtensions: ['styled.ts'],
   reactStrictMode: true,
 };

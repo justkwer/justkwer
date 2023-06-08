@@ -1,5 +1,4 @@
-import { ProjectsStyled } from './styled';
-import { H1, Section } from '@core/theme';
+import { H1, Section, ProjectsStyled } from '@core/theme';
 
 const Projects = () => (
   <ProjectsStyled>

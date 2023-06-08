@@ -1,7 +1,6 @@
-import { ErrorPageStyled } from './styled';
 import { Button, ErrorMessage, NotFoundMessage } from '@components';
 import { ErrorPageProp } from '@core/types';
-import { Section } from '@core/theme';
+import { Section, ErrorPageStyled } from '@core/theme';
 import Link from 'next/link';
 import { PathsToPage } from '@core/constants';
 import Image from 'next/image';

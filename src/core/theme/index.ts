@@ -26,3 +26,10 @@ export {
 export { GlobalStyles } from './GlobalStyles';
 
 export { fonts } from './fonts';
+
+export {
+  MainPageStyled,
+  ProjectsStyled,
+  AboutStyled,
+  ErrorPageStyled,
+} from './pages';
