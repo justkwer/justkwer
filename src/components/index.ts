@@ -8,7 +8,6 @@ export { ChangeMode } from './simple/ChangeMode';
 export { Logo } from './simple/Logo';
 export { Navigation } from './simple/Navigation';
 export { Scrolling } from './simple/Scrolling';
-export { Signature } from './simple/Signature';
 export { Social } from './simple/Social';
 export { Want } from './simple/Want';
 export { Burger } from './simple/Burger';

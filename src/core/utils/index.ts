@@ -1,1 +1,1 @@
-export { getRandom, getFoolYears } from './functions';
+export { getRandom, getFoolYears, signature } from './functions';

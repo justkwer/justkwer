@@ -6,6 +6,6 @@ export const BurgerMenuStyled = styled.div<ActiveType>`
   width: 100vw;
   height: 100vh;
   left: 0;
-  top: 20px;
+  top: 0;
   visibility: ${({ active }) => (active ? 'visible' : 'hidden')};
 `;

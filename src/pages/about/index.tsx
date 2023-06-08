@@ -11,8 +11,6 @@ import {
   WhatIWant,
 } from '@components';
 
-import { MainLayout } from '@layout';
-
 const aboutContent = [
   <AboutMe key="about" />,
   <Education key="education" />,
@@ -51,16 +49,14 @@ const About = () => {
   }, [handleScroll]);
 
   return (
-    <MainLayout>
-      <AboutStyled page={page === 0}>
-        <Section>
-          <Scrolling click={handleClick} up={true} />
-          <H1>Alex Moore</H1>
-          {aboutContent[page]}
-          {page !== navLength && <Scrolling click={handleClick} up={false} />}
-        </Section>
-      </AboutStyled>
-    </MainLayout>
+    <AboutStyled page={page === 0}>
+      <Section>
+        <Scrolling click={handleClick} up={true} />
+        <H1>Alex Moore</H1>
+        {aboutContent[page]}
+        {page !== navLength && <Scrolling click={handleClick} up={false} />}
+      </Section>
+    </AboutStyled>
   );
 };
 

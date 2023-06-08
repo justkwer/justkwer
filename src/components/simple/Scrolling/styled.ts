@@ -26,7 +26,7 @@ export const ScrollingStyled = styled.button<ActiveType>`
     gap: 0;
 
     #mouse {
-      height: 25px;
+      height: 30px;
     }
   }
 `;

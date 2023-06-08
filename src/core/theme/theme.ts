@@ -105,5 +105,6 @@ export const darkTheme: DefaultTheme = {
     white: theme.colors.dark,
     grey: theme.colors.black,
     magenta: theme.colors.blue,
+    yellow: theme.colors.magenta,
   },
 };

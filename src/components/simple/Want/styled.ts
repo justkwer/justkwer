@@ -45,6 +45,20 @@ export const WantGeneratorStyled = styled.figure`
   @media (${({ theme }) => theme.media.mobile}) {
     h3,
     h4 {
+      font-size: 0.7rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    h3,
+    h4 {
+      font-size: 0.6rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    h3,
+    h4 {
       font-size: 0.5rem;
     }
   }

@@ -63,6 +63,10 @@ export const H1 = styled.h1`
   }
 
   @media (${({ theme }) => theme.media.mobile}) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 474px) {
     font-size: 1.2rem;
   }
 `;
@@ -89,7 +93,7 @@ export const H2 = styled.h2`
   }
 
   @media (${({ theme }) => theme.media.mobile}) {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 `;
 
@@ -105,7 +109,7 @@ export const P = styled.p`
   }
 
   @media (${({ theme }) => theme.media.mobile}) {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 `;
 

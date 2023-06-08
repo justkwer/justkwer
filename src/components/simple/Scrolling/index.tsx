@@ -13,7 +13,7 @@ export const Scrolling: FC<ScrollingProps> = ({ click, up }) => {
   return (
     <ScrollingStyled onClick={handleClick} active={up}>
       {up && <Arrow id="arrow" />}
-      <Mouse />
+      <Mouse id="mouse" />
       {!up && <Arrow id="arrow" />}
     </ScrollingStyled>
   );

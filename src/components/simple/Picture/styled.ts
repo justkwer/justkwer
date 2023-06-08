@@ -37,6 +37,13 @@ export const PictureStyled = styled.figure`
     strong,
     a {
       color: ${({ theme }) => theme.colors.yellow};
+      &:hover {
+        ${({ theme }) => `
+          -webkit-text-shadow: 0px 0px 10px ${theme.colors.yellow};
+          -moz-text-shadow: 0px 0px 10px ${theme.colors.yellow};
+          text-shadow: 0px 0px 10px ${theme.colors.yellow};
+          `};
+      }
     }
   }
 
@@ -61,9 +68,18 @@ export const PictureStyled = styled.figure`
   @media (${({ theme }) => theme.media.mobile}) {
     flex-direction: column;
     gap: 20px;
+    text-align: center;
 
     h2 {
       font-size: 2rem;
+    }
+
+    p,
+    a {
+      font-size: 0.75rem;
+    }
+    svg {
+      height: 40vh;
     }
   }
 `;
