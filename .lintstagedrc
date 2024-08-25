@@ -1,3 +1,0 @@
-{
-  "**/*.{ts,tsx}": ["yarn run format", "yarn run lint"]
-}
