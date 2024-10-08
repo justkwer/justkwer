@@ -73,6 +73,7 @@ export const darkTheme = {
 
   colors: {
     ...theme.colors,
+    dark: theme.colors.white,
     primary: theme.colors.magenta,
     white: theme.colors.dark,
     grey: theme.colors.black,

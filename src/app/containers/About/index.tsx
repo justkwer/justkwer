@@ -18,7 +18,7 @@ export const About = () => {
   const handleClick: ScrollingProps['callback'] = (isScrollUp) => {
     const now = Date.now();
 
-    if (now - lastScrollTime.current < 500) {
+    if (now - lastScrollTime.current < 1000) {
       return;
     }
 
@@ -33,7 +33,13 @@ export const About = () => {
     setCurrentSection((prevState) => prevState + (isScrollUp ? -1 : 1));
   };
 
-  const handleScroll = useCallback((e: WheelEvent) => handleClick(e.deltaY < 0), [handleClick]);
+  const handleScroll = useCallback(
+    (e: WheelEvent) => {
+      e.preventDefault();
+      handleClick(e.deltaY < 0);
+    },
+    [handleClick],
+  );
 
   useEffect(() => {
     window.addEventListener('wheel', handleScroll);

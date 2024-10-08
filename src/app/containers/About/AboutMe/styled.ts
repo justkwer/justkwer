@@ -137,7 +137,6 @@ export const MyPhoto = styled.div`
         keyframesDuration,
         animation: { keyframesOpacity },
       },
-      media: { mediaSmall },
     },
   }) => css`
     animation: ${keyframesOpacity} ${keyframesDuration[0]} forwards;

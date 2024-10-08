@@ -5,6 +5,7 @@ import { theme } from './theme';
 export const Section = styled.section`
   ${({
     theme: {
+      colors: { dark },
       sizes: {
         container: { padding, width },
       },
@@ -28,6 +29,15 @@ export const Section = styled.section`
     @media (${mediaMobile}) {
       max-width: ${width[4]}px;
       padding: ${padding[4]};
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    span {
+      filter: drop-shadow(0 0 5px ${dark});
     }
   `};
 `;
@@ -86,6 +96,48 @@ export const H2 = styled.h2`
   `}
 `;
 
+export const H3 = styled.h3`
+  font-weight: 500;
+  font-size: 2rem;
+  ${({
+    theme: {
+      media: { mediaMedium, mediaMobile, mediaSmall },
+    },
+  }) => css`
+    @media (${mediaMedium}) {
+      font-size: 1.8rem;
+    }
+
+    @media (${mediaSmall}) {
+      font-size: 1.6rem;
+    }
+
+    @media (${mediaMobile}) {
+      font-size: 1.4rem;
+    }
+  `}
+`;
+
+export const H4 = styled.h4`
+  font-size: 1.5rem;
+  ${({
+    theme: {
+      media: { mediaMedium, mediaMobile, mediaSmall },
+    },
+  }) => css`
+    @media (${mediaMedium}) {
+      font-size: 1.4rem;
+    }
+
+    @media (${mediaSmall}) {
+      font-size: 1.3rem;
+    }
+
+    @media (${mediaMobile}) {
+      font-size: 1.2rem;
+    }
+  `}
+`;
 export const P = styled.p`
   font-size: 1.3rem;
   ${({
@@ -152,20 +204,9 @@ export const BorderLeft = styled.span`
 
     @media (${mediaMobile}) {
       gap: 30px;
-
     };
   }
   `};
-`;
-
-export const BorderDown = styled(BorderLeft)`
-  width: 1.8em;
-  border-bottom: solid
-    ${({
-      theme: {
-        colors: { white },
-      },
-    }) => white};
 `;
 
 export const Svg = css`

@@ -21,12 +21,24 @@ export const DICTIONARY = {
       ABOUT_ME: 'About me',
       ABOUT_FIRST: 'Hi there! My name is Alex. I’m frontend developer with',
       ABOUT_SECOND:
-        "years experience. I usually write in React and Next, I also study Three.js (I have a lot of experience in 3D modeling). I am interested in information technologies and how they transform our lives. I'd like to become a website developer or create games. Open to remote work offers or ready to consider moving",
+        "years experience. I usually write in React and Next, I also study Three.js (I have a lot of experience in 3D modeling). I am interested in information technologies and how they transform our lives. There's nothing better than clean code and a working application",
     },
     EDUCATION: {
       EDUCATION: 'Education',
       EDUCATION_TEXT:
-        'Throughout my life I have had to learn a lot. If we talk about information technologies related to the Web, these are: HTML, CSS, JavaScript, TypeScript, Git, React, Redux (Saga, RTK), Styled-components, Next.js, REST API, Three.js. I am currently studying game engine',
+        'Throughout my life I have had to learn a lot. If we talk about information technologies related to the Web, these are: HTML, CSS, JavaScript, TypeScript, Git, React, Redux (Saga, RTK), React-query, Styled-components, Next.js, REST API, Three.js. I am currently studying game engine',
+    },
+    WHAT_I_WANT: {
+      WHAT_I_WANT_TO_DO: 'What I want to do',
+      WEB_DEVELOPMENT_TITLE: 'Web Development',
+      WEB_DEVELOPMENT_SUB_TITLE:
+        'Responsive secured web apps and websites that gives you that edge over your competitors. All with SEO in mind to make your brand unique visible online and generate more customers + sales.',
+      MOBILE_APPS_TITLE: 'Mobile Apps',
+      MOBILE_APPS_SUB_TITLE:
+        'Functional apps unique for each native platform that makes working that makes working with your customers very efficiently. Beauty, simplicity and speed are the key to success.',
+      GAMES_TITLE: 'Games',
+      GAMES_SUB_TITLE:
+        "Unique browser and mobile games (maybe PC) with wide functionality and exciting gameplay. I know everything about games, because I've been playing all my life. My fantasy is limitless.",
     },
   },
 } as const;
