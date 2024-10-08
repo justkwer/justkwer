@@ -5,7 +5,7 @@ import { P, Section } from '~styles';
 export const Body = styled.body`
   width: 100dvw;
   height: 100dvh;
-
+  overflow: hidden;
   letter-spacing: var(--letter-spacing-primary);
   display: flex;
   flex-direction: column;
