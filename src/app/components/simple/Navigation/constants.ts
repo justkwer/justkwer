@@ -1,6 +1,3 @@
-import { PATH_ABOUT, PATH_PROJECTS } from '~constants';
+import { PATH_ABOUT } from '~constants';
 
-export const NAVIGATION_LIST = [
-  { href: PATH_ABOUT, text: 'About' },
-  { href: PATH_PROJECTS, text: 'Projects' },
-];
+export const NAVIGATION_LIST = [{ href: PATH_ABOUT, text: 'About' }];
