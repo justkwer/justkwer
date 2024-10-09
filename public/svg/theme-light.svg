@@ -1,13 +1,12 @@
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 512.000000 512.000000" height="45" width="45"
-     preserveAspectRatio="xMidYMid meet">
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 512 512" height="24" width="24">
     <defs>
         <linearGradient id="gradient">
             <stop offset="0%" stop-color="var(--color-stop)"/>
             <stop offset="100%" stop-color="var(--color-bot)"/>
         </linearGradient>
     </defs>
-    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
+    <g transform="translate(0,512) scale(0.1,-0.1)">
         <path
                 d="M2321 5110 c-497 -48 -990 -251 -1376 -565 -114 -92 -294 -274 -384
 -387 -229 -287 -417 -675 -495 -1023 -49 -218 -60 -325 -60 -575 0 -250 11

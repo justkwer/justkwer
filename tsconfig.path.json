@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "~svg/*": [
+        "../public/svg/*"
+      ],
+      "~images/*": [
+        "../public/images/*"
+      ],
+      "~hooks": [
+        "hooks"
+      ],
+      "~containers": [
+        "app/containers"
+      ],
+      "~components": [
+        "app/components"
+      ],
+      "~services": [
+        "services"
+      ],
+      "~constants": [
+        "constants"
+      ],
+      "~context": [
+        "context"
+      ],
+      "~types": [
+        "types"
+      ],
+      "~utils": [
+        "utils"
+      ],
+      "~styles": [
+        "styles"
+      ]
+    }
+  }
+}
+
+
+

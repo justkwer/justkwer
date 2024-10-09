@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -19,33 +19,29 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "baseUrl": "src",
     "outDir": ".yarn/.cache",
     "incremental": true,
-    "paths": {
-      "@public/*": [
-        "../public/*"
-      ],
-      "@components": [
-        "components"
-      ],
-      "@containers": [
-        "containers"
-      ],
-      "@core/*": [
-        "core/*"
-      ],
-      "@layout": [
-        "layout"
-      ]
-    }
+    "verbatimModuleSyntax": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
     "src",
-    "next.config.js"
+    ".next/types/**/*.ts"
   ],
   "exclude": [
+    "public",
+    ".pnp.loader.mjs",
+    ".pnp.cjs",
     "node_modules",
-    "public"
-  ]
+    ".yarn",
+    ".next"
+  ],
+  "extends": "./tsconfig.path.json"
 }

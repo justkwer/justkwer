@@ -1,0 +1,25 @@
+body {
+  --2: 2px;
+  --4: 4px;
+  --6: 6px;
+  --8: 8px;
+  --10: 10px;
+  --12: 12px;
+  --14: 14px;
+  --16: 16px;
+  --18: 18px;
+  --20: 20px;
+  --40: 40px;
+  --60: 60px;
+  --1s: 0.1s;
+  --3s: 0.3s;
+
+  --border-radius-primary: 14px;
+  --border-radius-secondary: 20px;
+
+  --drop-shadow-primary: 20 0 2px rgba(24, 92, 255, 0.04);
+  --drop-shadow-secondary: 6 0 2px rgba(0, 43, 78, 0.15);
+
+  --letter-spacing-primary: 0.06rem;
+  --letter-spacing-secondary: 0.1rem;
+}

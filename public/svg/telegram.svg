@@ -1,6 +1,5 @@
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 25 25" height="45" width="45"
-     preserveAspectRatio="xMidYMid meet">
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 25 25" height="24" width="24">
     <defs>
         <linearGradient id="gradient">
             <stop offset="0%" stop-color="var(--color-stop)"/>
