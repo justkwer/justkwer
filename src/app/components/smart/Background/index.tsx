@@ -35,6 +35,10 @@ export const Background = () => {
   }, [resize]);
 
   useEffect(() => {
+    if (!isLightTheme) {
+      return;
+    }
+
     const canvas = canvasRef?.current?.getContext('2d');
     if (!canvas || !width || !height) return;
     canvas.fillStyle = 'white';
@@ -65,12 +69,14 @@ export const Background = () => {
     };
 
     requestAnimationFrame(printStar);
-  }, [canvasRef, windowSize, width, height]);
+  }, [canvasRef, windowSize, width, height, isLightTheme]);
 
-  return isLightTheme ? (
-    <S.Background>
-      <Image src={background} alt="background" />
-      <canvas ref={canvasRef} width={width} height={height} />
-    </S.Background>
-  ) : null;
+  return (
+    isLightTheme && (
+      <S.Background>
+        <Image src={background} alt="background" />
+        <canvas ref={canvasRef} width={width} height={height} />
+      </S.Background>
+    )
+  );
 };
