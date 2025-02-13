@@ -1,15 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { H1 } from '~styles';
 import * as S from './styled';
 import { ABOUT_SECTIONS, ABOUT_SECTIONS_COUNT } from './constants';
 import { Scrolling } from './Scrolling';
 import type { ScrollingProps } from './Scrolling/models';
-import { useDictionary } from '~hooks';
 
 export const About = () => {
-  const {
-    META: { ALEX_MOORE },
-  } = useDictionary();
   const [currentSection, setCurrentSection] = useState(0);
   const lastScrollTime = useRef(0);
   const isFirstPage = currentSection === 0;
@@ -51,7 +46,6 @@ export const About = () => {
   return (
     <S.About>
       <Scrolling callback={handleClick} isScrollUp isHidden={isFirstPage} />
-      <H1>{ALEX_MOORE}</H1>
       {ABOUT_SECTIONS[currentSection]}
       <Scrolling callback={handleClick} isHidden={isLastPage} />
     </S.About>

@@ -4,18 +4,24 @@ import books from '~images/webp/books.webp';
 import { useDictionary } from '~hooks';
 import { AboutMe } from '../AboutMe/styled';
 import Image from 'next/image';
+import * as S from './styled';
 
-export const Education = () => {
+export const Experience = () => {
   const {
-    EDUCATION: { EDUCATION, EDUCATION_TEXT },
+    EXPERIENCE: { EXPERIENCE, EXPERIENCE_TEXT, EXPERIENCES },
   } = useDictionary();
 
   return (
     <AboutMe>
       <figcaption>
-        <H2>{EDUCATION}</H2>
+        <H2>{EXPERIENCE}</H2>
         <BorderLeft />
-        <P>{EDUCATION_TEXT}</P>
+        <P>{EXPERIENCE_TEXT}</P>
+        <S.ExperienceList>
+          {EXPERIENCES.map((experience) => (
+            <S.ExperienceItem key={experience}>{`- ${experience};`}</S.ExperienceItem>
+          ))}
+        </S.ExperienceList>
       </figcaption>
       <Image src={books} alt="Books" />
     </AboutMe>

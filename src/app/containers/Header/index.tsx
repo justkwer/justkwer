@@ -7,8 +7,8 @@ export const Header = () => (
     <Section>
       <Logo />
       <Navigation />
-      <Theme />
       <Burger />
+      <Theme />
     </Section>
   </S.Header>
 );

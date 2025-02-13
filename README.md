@@ -5,7 +5,7 @@
 🔭 I’m looking job "Frontend developer" or "Game developer"<br>🌱 I’m currently
 learning game engine in JS<br>
 
-## <img src="https://raw.githubusercontent.com/justkwer/justkwer/master/public/favicon.ico" width="30" height="25" /> [Curriculum Vitae](https://alex-moore.vercel.app/)
+## <img src="https://raw.githubusercontent.com/justkwer/justkwer/master/public/favicon.ico" width="30" height="25" /> [Curriculum Vitae](https://alex-yakovlev.vercel.app/)
 
 ## 🌐 Socials:
 

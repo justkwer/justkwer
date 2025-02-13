@@ -27,6 +27,7 @@ export const Body = styled.body`
 
 export const Main = styled.main`
   width: 100%;
+  overflow-y: hidden;
   flex-grow: 3;
 `;
 

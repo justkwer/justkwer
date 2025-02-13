@@ -5,6 +5,9 @@ import { Section } from '~styles';
 export const About = styled(Section)`
   height: 100%;
   justify-content: space-between;
+  gap: var(--10);
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
 
   ${({
     theme: {
@@ -19,7 +22,6 @@ export const About = styled(Section)`
 
     h1 {
       animation: ${keyframesTitle} ${keyframesDuration[0]} forwards;
-      padding-bottom: 16px;
     }
   }
   `};

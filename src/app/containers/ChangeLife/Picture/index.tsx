@@ -15,7 +15,7 @@ export const Picture = () => {
       <figcaption>
         <S.Title>{IS_REAL}</S.Title>
         <S.Subtitle>
-          <a href="/Alex-Moore.pdf" download="Alex Moore.pdf">
+          <a href="/Alex-Yakovlev.pdf" download="Alex Yakovlev.pdf">
             {CLICK}
           </a>
           &ensp;{TO_DOWNLOAD_OR}&ensp;

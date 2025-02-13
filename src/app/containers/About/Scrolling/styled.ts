@@ -4,7 +4,6 @@ import type { ScrollingType } from './models';
 
 export const Scrolling = styled.button<ScrollingType>`
   opacity: 0;
-  gap: 10px;
 
   #arrow {
     width: 12px;
@@ -47,8 +46,14 @@ export const Scrolling = styled.button<ScrollingType>`
     @media (${mediaMobile}) {
       gap: 0;
 
+      #arrow {
+        width: 10px;
+        height: 10px;
+      }
+
       #mouse {
-        height: 30px;
+        width: 24px;
+        height: 24px;
       }
     }
   `};

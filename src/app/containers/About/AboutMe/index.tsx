@@ -2,13 +2,11 @@ import Image from 'next/image';
 import { BorderLeft, H2, P } from '~styles';
 import * as S from './styled';
 import myPhoto from '~images/webp/me.webp';
-import { getYearsFromDate } from '~utils';
 import { useDictionary } from '~hooks';
-import { START_PROGRAMMING_DATA } from './constants';
 
 export const AboutMe = () => {
   const {
-    ABOUT_ME: { ABOUT_ME, ABOUT_FIRST, ABOUT_SECOND },
+    ABOUT_ME: { ABOUT_ME, ABOUT_TEXT },
   } = useDictionary();
 
   return (
@@ -20,7 +18,7 @@ export const AboutMe = () => {
       <figcaption>
         <H2>{ABOUT_ME}</H2>
         <BorderLeft />
-        <P>{`${ABOUT_FIRST} ${getYearsFromDate(START_PROGRAMMING_DATA)} ${ABOUT_SECOND}`}</P>
+        <P>{ABOUT_TEXT}</P>
       </figcaption>
     </S.AboutMe>
   );
