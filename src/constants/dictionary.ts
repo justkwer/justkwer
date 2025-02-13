@@ -1,6 +1,6 @@
 export const DICTIONARY = {
   en: {
-    META: { ALEX_MOORE: 'Alex Moore' },
+    META: { ALEX_YAKOVLEV: 'Alex Yakovlev' },
     ERROR: {
       BACK_HOME: 'Back home',
       ERROR_TITLE: 'Oops! Something wrong...',
@@ -19,14 +19,24 @@ export const DICTIONARY = {
     },
     ABOUT_ME: {
       ABOUT_ME: 'About me',
-      ABOUT_FIRST: 'Hi there! My name is Alex. I’m frontend developer with',
-      ABOUT_SECOND:
-        "years experience. I usually write in React and Next, I also study Three.js (I have a lot of experience in 3D modeling). I am interested in information technologies and how they transform our lives. There's nothing better than clean code and a working application",
+      ABOUT_TEXT:
+        "I want to improve and develop myself, which is why I chose frontend. It's important for me to approach my work with full immersion and engagement in the project and to see it through to completion. I can identify relevant problems and find different solutions for them.My excellent soft skills allow me to interact well with the team and uplift my colleagues spirits. I have a keen eye and can instantly spot poor code or discrepancies with the task, which sometimes doesn’t sit well with the team (hello to my experience as a team lead).\n" +
+        'I love coding... and cats :)',
     },
-    EDUCATION: {
-      EDUCATION: 'Education',
-      EDUCATION_TEXT:
-        'Throughout my life I have had to learn a lot. If we talk about information technologies related to the Web, these are: HTML, CSS, JavaScript, TypeScript, Git, React, Redux (Saga, RTK), React-query, Styled-components, Next.js, REST API, Three.js. I am currently studying game engine',
+    EXPERIENCE: {
+      EXPERIENCE: 'Experience',
+      EXPERIENCES: [
+        'Adaptive and semantic layout of websites',
+        'Integration of the front end of websites with the back end using REST API',
+        'Support for existing websites',
+        'Development of web interfaces',
+        'SEO optimization (validity)',
+        'Writing unit tests',
+        'Adhering to OOP principles, SOLID',
+        'Code refactoring',
+        'Reviewing completed projects',
+      ],
+      EXPERIENCE_TEXT: 'Long-term collaboration with companies and performing tasks such as:',
     },
     WHAT_I_WANT: {
       WHAT_I_WANT_TO_DO: 'What I want to do',

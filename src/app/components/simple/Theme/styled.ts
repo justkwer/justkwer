@@ -11,7 +11,7 @@ export const Theme = styled.button`
 
   ${({
     theme: {
-      media: { mediaMedium, mediaLarge, mediaMobile },
+      media: { mediaMedium, mediaLarge, mediaSmall },
     },
   }) => css`
     @media (${mediaLarge}) {
@@ -21,8 +21,8 @@ export const Theme = styled.button`
       margin-left: 25px;
     }
 
-    @media (${mediaMobile}) {
-      margin-left: auto;
+    @media (${mediaSmall}) {
+      margin-left: 15px;
     }
   `};
 `;

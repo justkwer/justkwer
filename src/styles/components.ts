@@ -37,7 +37,7 @@ export const Section = styled.section`
     h4,
     p,
     span {
-      filter: drop-shadow(0 0 5px ${dark});
+      text-shadow: 0 0 5px ${dark};
     }
   `};
 `;
@@ -52,7 +52,7 @@ export const hover = css`
 
 export const H1 = styled.h1`
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 4rem;
 
   ${({
     theme: {
@@ -68,7 +68,7 @@ export const H1 = styled.h1`
     }
 
     @media (max-width: 474px) {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   `};
 `;
@@ -204,6 +204,7 @@ export const BorderLeft = styled.span`
 
     @media (${mediaMobile}) {
       gap: 30px;
+      font-size: 1rem;
     };
   }
   `};

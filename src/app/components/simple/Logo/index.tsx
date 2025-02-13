@@ -9,7 +9,7 @@ export const Logo = () => {
   const { push } = useRouter();
   const pathname = usePathname();
   const {
-    META: { ALEX_MOORE },
+    META: { ALEX_YAKOVLEV },
   } = useDictionary();
   const handleClick = (): void => {
     if (pathname !== PATH_MAIN) {
@@ -19,7 +19,7 @@ export const Logo = () => {
 
   return (
     <S.Logo onClick={handleClick}>
-      <Span>{ALEX_MOORE}</Span>
+      <Span>{ALEX_YAKOVLEV}</Span>
     </S.Logo>
   );
 };

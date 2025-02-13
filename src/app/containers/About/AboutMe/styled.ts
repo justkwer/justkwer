@@ -5,6 +5,7 @@ export const AboutMe = styled.figure`
   gap: 100px;
   position: relative;
   height: 100%;
+  overflow-y: scroll;
 
   ${({
     theme: {
@@ -27,12 +28,20 @@ export const AboutMe = styled.figure`
       max-height: 300px;
 
       @media (${mediaSmall}) {
+        max-height: 240px;
+        max-width: 240px;
+      }
+
+      @media (${mediaMobile}) {
         max-height: 160px;
         max-width: 160px;
       }
     }
 
     figcaption {
+      max-height: 100%;
+      overflow-y: scroll;
+
       h2 {
         opacity: 0;
         animation:
@@ -42,16 +51,15 @@ export const AboutMe = styled.figure`
         -webkit-text-fill-color: initial;
       }
 
-      span {
+      span,
+      li,
+      p {
         opacity: 0;
         animation: ${keyframesOpacity} ${keyframesDuration[0]} forwards;
         animation-delay: ${keyframesDelay[1]};
       }
 
       p {
-        opacity: 0;
-        animation: ${keyframesOpacity} ${keyframesDuration[0]} forwards;
-        animation-delay: ${keyframesDelay[1]};
         max-width: 500px;
       }
     }
@@ -84,6 +92,7 @@ export const AboutMe = styled.figure`
 export const MyPhoto = styled.div`
   position: relative;
   opacity: 0;
+  margin-top: 10px;
 
   div {
     position: absolute;
@@ -137,6 +146,7 @@ export const MyPhoto = styled.div`
         keyframesDuration,
         animation: { keyframesOpacity },
       },
+      media: { mediaSmall, mediaMobile },
     },
   }) => css`
     animation: ${keyframesOpacity} ${keyframesDuration[0]} forwards;
@@ -150,6 +160,18 @@ export const MyPhoto = styled.div`
         0 0 8px 0 ${magenta},
         0 0 6px 0 ${magenta},
         inset 0 0 40px ${magenta};
+    }
+
+    max-width: 300px;
+
+    & > img {
+      @media (${mediaSmall}) {
+        max-width: 240px;
+      }
+
+      @media (${mediaMobile}) {
+        max-width: 160px;
+      }
     }
   `};
 `;

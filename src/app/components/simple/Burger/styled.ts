@@ -6,9 +6,11 @@ import styled from '@emotion/styled';
 export const Burger = styled.div`
   position: relative;
   display: none;
-  margin-left: 15px;
-  width: 38px;
-  height: 38px;
+  margin-left: auto;
+  width: 32px;
+  height: 32px;
+  min-width: 24px;
+  min-height: 24px;
 
   & > button {
     ${hover};
@@ -30,8 +32,8 @@ export const Burger = styled.div`
     }
 
     @media (${mediaMobile}) {
-      width: 35px;
-      height: 35px;
+      width: 24px;
+      height: 24px;
     }
 
     @media (${mediaSmall}) {
@@ -46,7 +48,7 @@ export const BurgerBtn = styled.span<IsActiveType>`
   &:after {
     display: block;
     position: absolute;
-    width: 26px;
+    width: 21px;
     height: 2px;
     border-radius: 1px;
     transition-duration: 0.2s;
@@ -54,12 +56,12 @@ export const BurgerBtn = styled.span<IsActiveType>`
 
   &:before {
     content: '';
-    top: -8px;
+    top: -7px;
   }
 
   &:after {
     content: '';
-    top: 8px;
+    top: 7px;
   }
 
   ${({
@@ -75,9 +77,21 @@ export const BurgerBtn = styled.span<IsActiveType>`
     &:before,
     &:after {
       background: ${white};
+    }
 
-      @media (${mediaMobile}) {
-        width: 23px;
+    @media (${mediaMobile}) {
+      &,
+      &:before,
+      &:after {
+        width: 13px;
+      }
+
+      &:before {
+        top: -5px;
+      }
+
+      &:after {
+        top: 5px;
       }
     }
 

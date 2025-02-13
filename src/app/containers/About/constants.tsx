@@ -1,11 +1,11 @@
 import { AboutMe } from './AboutMe';
-import { Education } from './Education';
 import { WhatIWant } from './WhatIWant';
 import { WatchMe } from './WatchMe';
+import { Experience } from './Experience';
 
 export const ABOUT_SECTIONS = [
   <AboutMe key="About Me" />,
-  <Education key="Education" />,
+  <Experience key="Education" />,
   <WhatIWant key="What I Want" />,
   <WatchMe key="Watch Me" />,
 ];

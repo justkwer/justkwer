@@ -11,13 +11,13 @@ import { Footer, Header } from '~containers';
 
 export default function RootLayout({ children }: WithChildren) {
   const {
-    META: { ALEX_MOORE },
+    META: { ALEX_YAKOVLEV },
   } = useDictionary();
 
   return (
     <html lang="ru">
       <head>
-        <title>{ALEX_MOORE}</title>
+        <title>{ALEX_YAKOVLEV}</title>
       </head>
       <Context>
         <S.Body>
